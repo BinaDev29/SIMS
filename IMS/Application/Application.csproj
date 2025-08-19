@@ -22,4 +22,13 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CQRS\Employees\Commands\DeleteEmployee\" />
+    <Folder Include="CQRS\Employees\Commands\UpdateEmployee\" />
+    <Folder Include="CQRS\Employees\Queries\" />
+    <Folder Include="CQRS\Godowns\Queries\" />
+    <Folder Include="CQRS\Supplier\Commands\" />
+    <Folder Include="CQRS\Supplier\Queries\" />
+  </ItemGroup>
+
 </Project>
