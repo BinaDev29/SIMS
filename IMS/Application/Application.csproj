@@ -24,10 +24,6 @@
 
   <ItemGroup>
     <Folder Include="CQRS\Employees\Commands\UpdateEmployee\NewFolder\" />
-    <Folder Include="CQRS\InwardTransaction\Commands\CreateInwardTransaction\" />
-    <Folder Include="CQRS\InwardTransaction\Commands\DeleteInwardTransaction\" />
-    <Folder Include="CQRS\InwardTransaction\Commands\UpdateInwardTransaction\" />
-    <Folder Include="CQRS\InwardTransaction\Queries\" />
   </ItemGroup>
 
 </Project>
