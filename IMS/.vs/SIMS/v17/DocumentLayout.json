@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\outwardtransactions\\validators\\updateoutwardtransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\outwardtransactions\\validators\\updateoutwardtransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\outwardtransactions\\validators\\createoutwardtransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\outwardtransactions\\validators\\createoutwardtransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\outwardtransactions\\outwardtransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\outwardtransactions\\outwardtransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\outwardtransactions\\updateoutwardtransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\outwardtransactions\\updateoutwardtransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\outwardtransactions\\createoutwardtransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\outwardtransactions\\createoutwardtransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\returntransactions\\validators\\updatereturntransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\returntransactions\\validators\\updatereturntransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\returntransactions\\validators\\createreturntransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\returntransactions\\validators\\createreturntransactiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\returntransactions\\returntransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\returntransactions\\returntransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -215,6 +243,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UpdateOutwardTransactionDtoValidator.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\Validators\\UpdateOutwardTransactionDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\OutwardTransactions\\Validators\\UpdateOutwardTransactionDtoValidator.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\Validators\\UpdateOutwardTransactionDtoValidator.cs",
+              "RelativeToolTip": "Application\\DTOs\\OutwardTransactions\\Validators\\UpdateOutwardTransactionDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:10:16.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateOutwardTransactionDtoValidator.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\Validators\\CreateOutwardTransactionDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\OutwardTransactions\\Validators\\CreateOutwardTransactionDtoValidator.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\Validators\\CreateOutwardTransactionDtoValidator.cs",
+              "RelativeToolTip": "Application\\DTOs\\OutwardTransactions\\Validators\\CreateOutwardTransactionDtoValidator.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:07:59.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OutwardTransactionDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\OutwardTransactionDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\OutwardTransactions\\OutwardTransactionDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\OutwardTransactionDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\OutwardTransactions\\OutwardTransactionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:05:58.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateOutwardTransactionDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\UpdateOutwardTransactionDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\OutwardTransactions\\UpdateOutwardTransactionDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\UpdateOutwardTransactionDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\OutwardTransactions\\UpdateOutwardTransactionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:05:22.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateOutwardTransactionDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\CreateOutwardTransactionDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\OutwardTransactions\\CreateOutwardTransactionDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\OutwardTransactions\\CreateOutwardTransactionDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\OutwardTransactions\\CreateOutwardTransactionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:04:02.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateReturnTransactionDtoValidator.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\Validators\\UpdateReturnTransactionDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\ReturnTransactions\\Validators\\UpdateReturnTransactionDtoValidator.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\Validators\\UpdateReturnTransactionDtoValidator.cs",
+              "RelativeToolTip": "Application\\DTOs\\ReturnTransactions\\Validators\\UpdateReturnTransactionDtoValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:02:48.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateReturnTransactionDtoValidator.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\Validators\\CreateReturnTransactionDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\ReturnTransactions\\Validators\\CreateReturnTransactionDtoValidator.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\Validators\\CreateReturnTransactionDtoValidator.cs",
+              "RelativeToolTip": "Application\\DTOs\\ReturnTransactions\\Validators\\CreateReturnTransactionDtoValidator.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T12:02:18.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ReturnTransactionDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\ReturnTransactionDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ReturnTransactions\\ReturnTransactionDto.cs",
@@ -227,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "UpdateReturnTransactionDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\UpdateReturnTransactionDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ReturnTransactions\\UpdateReturnTransactionDto.cs",
@@ -235,12 +354,11 @@
               "RelativeToolTip": "Application\\DTOs\\ReturnTransactions\\UpdateReturnTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:58:26.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:58:26.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "CreateReturnTransactionDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\ReturnTransactions\\CreateReturnTransactionDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ReturnTransactions\\CreateReturnTransactionDto.cs",
@@ -248,12 +366,11 @@
               "RelativeToolTip": "Application\\DTOs\\ReturnTransactions\\CreateReturnTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:57:57.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:57:57.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "UpdateInwardTransactionDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\InwardTransactions\\Validators\\UpdateInwardTransactionDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\InwardTransactions\\Validators\\UpdateInwardTransactionDtoValidator.cs",
@@ -261,12 +378,11 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\Validators\\UpdateInwardTransactionDtoValidator.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAkwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:55:44.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:55:44.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "CreateInwardTransactionDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\InwardTransactions\\Validators\\CreateInwardTransactionDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\InwardTransactions\\Validators\\CreateInwardTransactionDtoValidator.cs",
@@ -274,12 +390,11 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\Validators\\CreateInwardTransactionDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:52:55.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:52:55.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "InwardTransactionDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\InwardTransactions\\InwardTransactionDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\InwardTransactions\\InwardTransactionDto.cs",
@@ -287,12 +402,11 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\InwardTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:50:43.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:50:43.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "CreateInwardTransactionDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\InwardTransactions\\CreateInwardTransactionDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\InwardTransactions\\CreateInwardTransactionDto.cs",
@@ -300,12 +414,11 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\CreateInwardTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:49:20.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:49:20.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "UpdateInwardTransactionDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\InwardTransactions\\UpdateInwardTransactionDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\InwardTransactions\\UpdateInwardTransactionDto.cs",
@@ -313,12 +426,11 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\UpdateInwardTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:49:42.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:49:42.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "UpdateCustomerDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Customers\\Validators\\UpdateCustomerDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Customers\\Validators\\UpdateCustomerDtoValidator.cs",
@@ -326,12 +438,11 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\Validators\\UpdateCustomerDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:38:20.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:38:20.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "CreateCustomerDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Customers\\Validators\\CreateCustomerDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Customers\\Validators\\CreateCustomerDtoValidator.cs",
@@ -339,12 +450,11 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\Validators\\CreateCustomerDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:37:49.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:37:49.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "CustomerDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Customers\\CustomerDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Customers\\CustomerDto.cs",
@@ -352,12 +462,11 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\CustomerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:36:56.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:36:56.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "Application.csproj",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
@@ -365,12 +474,11 @@
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T08:54:07.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T08:54:07.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "UpdateCustomerDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Customers\\UpdateCustomerDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Customers\\UpdateCustomerDto.cs",
@@ -378,12 +486,11 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\UpdateCustomerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:36:21.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:36:21.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "CreateCustomerDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Customers\\CreateCustomerDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Customers\\CreateCustomerDto.cs",
@@ -391,12 +498,11 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\CreateCustomerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:35:53.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:35:53.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "UpdateSupplierDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Suppliers\\Validators\\UpdateSupplierDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Suppliers\\Validators\\UpdateSupplierDtoValidator.cs",
@@ -404,12 +510,11 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\Validators\\UpdateSupplierDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:34:56.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:34:56.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "CreateSupplierDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Suppliers\\Validators\\CreateSupplierDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Suppliers\\Validators\\CreateSupplierDtoValidator.cs",
@@ -417,12 +522,11 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\Validators\\CreateSupplierDtoValidator.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:34:41.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:34:41.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "SupplierDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Suppliers\\SupplierDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Suppliers\\SupplierDto.cs",
@@ -430,12 +534,11 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\SupplierDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:33:52.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:33:52.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "UpdateSupplierDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Suppliers\\UpdateSupplierDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Suppliers\\UpdateSupplierDto.cs",
@@ -443,12 +546,11 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\UpdateSupplierDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:33:19.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:33:19.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "CreateSupplierDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Suppliers\\CreateSupplierDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Suppliers\\CreateSupplierDto.cs",
@@ -456,12 +558,11 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\CreateSupplierDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:32:48.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:32:48.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "UpdateEmployeeDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Employees\\Validators\\UpdateEmployeeDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Employees\\Validators\\UpdateEmployeeDtoValidator.cs",
@@ -469,12 +570,11 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\Validators\\UpdateEmployeeDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:32:07.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:32:07.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "CreateEmployeeDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Employees\\Validators\\CreateEmployeeDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Employees\\Validators\\CreateEmployeeDtoValidator.cs",
@@ -482,12 +582,11 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\Validators\\CreateEmployeeDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:31:35.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:31:35.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "EmployeeDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Employees\\EmployeeDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Employees\\EmployeeDto.cs",
@@ -495,12 +594,11 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\EmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:30:47.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:30:47.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "UpdateEmployeeDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Employees\\UpdateEmployeeDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Employees\\UpdateEmployeeDto.cs",
@@ -508,12 +606,11 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\UpdateEmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:28:32.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:28:32.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "CreateEmployeeDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Employees\\CreateEmployeeDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Employees\\CreateEmployeeDto.cs",
@@ -521,12 +618,11 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\CreateEmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:26:53.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:26:53.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "UpdateItemDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\Validators\\UpdateItemDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Items\\Validators\\UpdateItemDtoValidator.cs",
@@ -534,12 +630,11 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\Validators\\UpdateItemDtoValidator.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAgwCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:26:05.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:26:05.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "CreateItemDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\Validators\\CreateItemDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Items\\Validators\\CreateItemDtoValidator.cs",
@@ -547,12 +642,11 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\Validators\\CreateItemDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:25:23.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:25:23.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "ItemDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\ItemDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Items\\ItemDto.cs",
@@ -560,12 +654,11 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\ItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:24:33.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:24:33.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "UpdateItemDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\UpdateItemDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Items\\UpdateItemDto.cs",
@@ -573,12 +666,11 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\UpdateItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:23:37.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:23:37.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "CreateItemDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\CreateItemDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Items\\CreateItemDto.cs",
@@ -586,12 +678,11 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\CreateItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:22:39.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:22:39.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "UpdateGodownDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Godowns\\Validators\\UpdateGodownDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Godowns\\Validators\\UpdateGodownDtoValidator.cs",
@@ -599,12 +690,11 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\Validators\\UpdateGodownDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:21:53.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:21:53.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "CreateGodownDtoValidator.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Godowns\\Validators\\CreateGodownDtoValidator.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Godowns\\Validators\\CreateGodownDtoValidator.cs",
@@ -612,12 +702,11 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\Validators\\CreateGodownDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:21:30.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:21:30.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "GodownDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Godowns\\GodownDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Godowns\\GodownDto.cs",
@@ -625,12 +714,11 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\GodownDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:20:38.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:20:38.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "UpdateGodownDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Godowns\\UpdateGodownDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Godowns\\UpdateGodownDto.cs",
@@ -638,12 +726,11 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\UpdateGodownDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:20:09.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:20:09.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "CreateGodownDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Godowns\\CreateGodownDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Godowns\\CreateGodownDto.cs",
@@ -651,12 +738,11 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\CreateGodownDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:19:41.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:19:41.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "SIMSDbContext.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContext.cs",
               "RelativeDocumentMoniker": "Persistence\\SIMSDbContext.cs",
@@ -668,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "PersistenceServiceRegistration.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\PersistenceServiceRegistration.cs",
               "RelativeDocumentMoniker": "Persistence\\PersistenceServiceRegistration.cs",
@@ -680,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Application\\Contracts\\IGenericRepository.cs",
@@ -692,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\Repositories\\GenericRepository.cs",
@@ -704,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "Persistence.csproj",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Persistence.csproj",
               "RelativeDocumentMoniker": "Persistence\\Persistence.csproj",
@@ -712,12 +798,11 @@
               "RelativeToolTip": "Persistence\\Persistence.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T08:30:13.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T08:30:13.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "SIMSDbContextFactory.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContextFactory.cs",
               "RelativeDocumentMoniker": "Persistence\\SIMSDbContextFactory.cs",
@@ -729,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 52,
               "Title": "Supplier.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Supplier.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Supplier.cs",
@@ -741,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 51,
               "Title": "Customer.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Customer.cs",
@@ -753,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 50,
               "Title": "Employee.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
@@ -765,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 49,
               "Title": "Godown.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Godown.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Godown.cs",
@@ -777,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 48,
               "Title": "InwardTransaction.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\InwardTransaction.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\InwardTransaction.cs",
@@ -789,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "Item.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Item.cs",
@@ -801,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "ReturnTransaction.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\ReturnTransaction.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\ReturnTransaction.cs",
@@ -813,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "OutwardTransaction.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\OutwardTransaction.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\OutwardTransaction.cs",
@@ -825,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 55,
               "Title": "BaseDomainEntity.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Common\\BaseDomainEntity.cs",
               "RelativeDocumentMoniker": "Domain\\Common\\BaseDomainEntity.cs",
@@ -837,7 +922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 56,
               "Title": "Domain.csproj",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
@@ -845,8 +930,7 @@
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T07:30:18.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T07:30:18.8Z"
             }
           ]
         }

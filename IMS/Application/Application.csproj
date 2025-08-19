@@ -22,9 +22,4 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\OutwardTransactions\Validators\" />
-    <Folder Include="DTOs\ReturnTransactions\Validators\" />
-  </ItemGroup>
-
 </Project>

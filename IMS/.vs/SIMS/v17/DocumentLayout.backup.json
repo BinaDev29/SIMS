@@ -235,8 +235,7 @@
               "RelativeToolTip": "Application\\DTOs\\ReturnTransactions\\UpdateReturnTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:58:26.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:58:26.08Z"
             },
             {
               "$type": "Document",
@@ -248,8 +247,7 @@
               "RelativeToolTip": "Application\\DTOs\\ReturnTransactions\\CreateReturnTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:57:57.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:57:57.396Z"
             },
             {
               "$type": "Document",
@@ -261,8 +259,7 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\Validators\\UpdateInwardTransactionDtoValidator.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAkwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:55:44.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:55:44.106Z"
             },
             {
               "$type": "Document",
@@ -274,8 +271,7 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\Validators\\CreateInwardTransactionDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:52:55.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:52:55.563Z"
             },
             {
               "$type": "Document",
@@ -287,8 +283,7 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\InwardTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:50:43.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:50:43.656Z"
             },
             {
               "$type": "Document",
@@ -300,8 +295,7 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\CreateInwardTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:49:20.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:49:20.18Z"
             },
             {
               "$type": "Document",
@@ -313,8 +307,7 @@
               "RelativeToolTip": "Application\\DTOs\\InwardTransactions\\UpdateInwardTransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:49:42.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:49:42.951Z"
             },
             {
               "$type": "Document",
@@ -326,8 +319,7 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\Validators\\UpdateCustomerDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:38:20.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:38:20.965Z"
             },
             {
               "$type": "Document",
@@ -339,8 +331,7 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\Validators\\CreateCustomerDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:37:49.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:37:49.16Z"
             },
             {
               "$type": "Document",
@@ -352,8 +343,7 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\CustomerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:36:56.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:36:56.218Z"
             },
             {
               "$type": "Document",
@@ -365,8 +355,7 @@
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T08:54:07.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T08:54:07.417Z"
             },
             {
               "$type": "Document",
@@ -378,8 +367,7 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\UpdateCustomerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:36:21.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:36:21.273Z"
             },
             {
               "$type": "Document",
@@ -391,8 +379,7 @@
               "RelativeToolTip": "Application\\DTOs\\Customers\\CreateCustomerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:35:53.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:35:53.642Z"
             },
             {
               "$type": "Document",
@@ -404,8 +391,7 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\Validators\\UpdateSupplierDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:34:56.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:34:56.81Z"
             },
             {
               "$type": "Document",
@@ -417,8 +403,7 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\Validators\\CreateSupplierDtoValidator.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:34:41.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:34:41.474Z"
             },
             {
               "$type": "Document",
@@ -430,8 +415,7 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\SupplierDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:33:52.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:33:52.23Z"
             },
             {
               "$type": "Document",
@@ -443,8 +427,7 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\UpdateSupplierDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:33:19.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:33:19.265Z"
             },
             {
               "$type": "Document",
@@ -456,8 +439,7 @@
               "RelativeToolTip": "Application\\DTOs\\Suppliers\\CreateSupplierDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:32:48.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:32:48.499Z"
             },
             {
               "$type": "Document",
@@ -469,8 +451,7 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\Validators\\UpdateEmployeeDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:32:07.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:32:07.18Z"
             },
             {
               "$type": "Document",
@@ -482,8 +463,7 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\Validators\\CreateEmployeeDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:31:35.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:31:35.723Z"
             },
             {
               "$type": "Document",
@@ -495,8 +475,7 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\EmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:30:47.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:30:47.343Z"
             },
             {
               "$type": "Document",
@@ -508,8 +487,7 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\UpdateEmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:28:32.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:28:32.918Z"
             },
             {
               "$type": "Document",
@@ -521,8 +499,7 @@
               "RelativeToolTip": "Application\\DTOs\\Employees\\CreateEmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:26:53.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:26:53.476Z"
             },
             {
               "$type": "Document",
@@ -534,8 +511,7 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\Validators\\UpdateItemDtoValidator.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAgwCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:26:05.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:26:05.34Z"
             },
             {
               "$type": "Document",
@@ -547,8 +523,7 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\Validators\\CreateItemDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:25:23.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:25:23.694Z"
             },
             {
               "$type": "Document",
@@ -560,8 +535,7 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\ItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:24:33.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:24:33.776Z"
             },
             {
               "$type": "Document",
@@ -573,8 +547,7 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\UpdateItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:23:37.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:23:37.596Z"
             },
             {
               "$type": "Document",
@@ -586,8 +559,7 @@
               "RelativeToolTip": "Application\\DTOs\\Items\\CreateItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:22:39.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:22:39.57Z"
             },
             {
               "$type": "Document",
@@ -599,8 +571,7 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\Validators\\UpdateGodownDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:21:53.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:21:53.722Z"
             },
             {
               "$type": "Document",
@@ -612,8 +583,7 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\Validators\\CreateGodownDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:21:30.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:21:30.544Z"
             },
             {
               "$type": "Document",
@@ -625,8 +595,7 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\GodownDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:20:38.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:20:38.769Z"
             },
             {
               "$type": "Document",
@@ -638,8 +607,7 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\UpdateGodownDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:20:09.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:20:09.594Z"
             },
             {
               "$type": "Document",
@@ -651,8 +619,7 @@
               "RelativeToolTip": "Application\\DTOs\\Godowns\\CreateGodownDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T11:19:41.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T11:19:41.392Z"
             },
             {
               "$type": "Document",
@@ -712,8 +679,7 @@
               "RelativeToolTip": "Persistence\\Persistence.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T08:30:13.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T08:30:13.921Z"
             },
             {
               "$type": "Document",
@@ -845,8 +811,7 @@
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T07:30:18.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T07:30:18.8Z"
             }
           ]
         }
