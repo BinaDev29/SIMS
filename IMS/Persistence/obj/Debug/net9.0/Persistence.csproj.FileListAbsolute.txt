@@ -1,0 +1,6 @@
+F:\@INTERNSHIP 2017\INVENTERY\IMS\Persistence\obj\Debug\net9.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\@INTERNSHIP 2017\INVENTERY\IMS\Persistence\obj\Debug\net9.0\Persistence.AssemblyInfoInputs.cache
+F:\@INTERNSHIP 2017\INVENTERY\IMS\Persistence\obj\Debug\net9.0\Persistence.AssemblyInfo.cs
+F:\@INTERNSHIP 2017\INVENTERY\IMS\Persistence\obj\Debug\net9.0\Persistence.csproj.CoreCompileInputs.cache
+F:\@INTERNSHIP 2017\INVENTERY\IMS\Persistence\obj\Debug\net9.0\Persistence.sourcelink.json
+F:\@INTERNSHIP 2017\INVENTERY\IMS\Persistence\obj\Debug\net9.0\Persistence.csproj.AssemblyReference.cache
