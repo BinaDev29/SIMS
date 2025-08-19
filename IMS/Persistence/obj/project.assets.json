@@ -1720,6 +1720,19 @@
           }
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -5003,6 +5016,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -5011,6 +5029,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Application >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
@@ -5052,6 +5071,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Application.csproj": {
+              "projectPath": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Application.csproj"
+            },
             "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Domain.csproj": {
               "projectPath": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Domain.csproj"
             }

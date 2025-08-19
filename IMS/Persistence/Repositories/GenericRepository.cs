@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Domain.Common;
+﻿using Domain.Common;
 using Microsoft.EntityFrameworkCore;
-using Application.Contracts; // This is the new reference
+using Application.Contracts; // This reference is now working
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

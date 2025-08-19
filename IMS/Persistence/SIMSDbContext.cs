@@ -6,6 +6,9 @@ using System.Reflection.Emit;
 using System.Threading;
 using System.Threading.Tasks;
 
+using System.Threading;
+using System.Threading.Tasks;
+
 namespace Persistence
 {
     public class SIMSDbContext : DbContext
@@ -14,7 +17,6 @@ namespace Persistence
         {
         }
 
-        // DbSet properties for each of our models
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Godown> Godowns { get; set; }
         public DbSet<Item> Items { get; set; }
