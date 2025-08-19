@@ -2,7 +2,7 @@
 using Application.DTOs.Suppliers;
 using Application.Responses;
 
-namespace Application.CQRS.Suppliers.Commands.UpdateSupplier
+namespace Application.CQRS.Supplier.Commands.UpdateSupplier
 {
     public class UpdateSupplierCommand : IRequest<BaseCommandResponse>
     {

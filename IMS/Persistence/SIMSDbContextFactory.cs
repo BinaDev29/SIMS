@@ -21,7 +21,7 @@ namespace Persistence
                 .Build();
 
             var builder = new DbContextOptionsBuilder<SIMSDbContext>();
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            var connectionString = configuration.GetConnectionString("InventoryConnectionString");
             builder.UseSqlServer(connectionString);
 
             return new SIMSDbContext(builder.Options);

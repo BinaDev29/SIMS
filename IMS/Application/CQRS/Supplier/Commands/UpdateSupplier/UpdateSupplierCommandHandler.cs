@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Application.Exceptions;
 
-namespace Application.CQRS.Suppliers.Commands.UpdateSupplier
+namespace Application.CQRS.Supplier.Commands.UpdateSupplier
 {
     public class UpdateSupplierCommandHandler : IRequestHandler<UpdateSupplierCommand, BaseCommandResponse>
     {

@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Application.Responses;
 
-namespace Application.CQRS.Suppliers.Commands.DeleteSupplier
+namespace Application.CQRS.Supplier.Commands.DeleteSupplier
 {
     public class DeleteSupplierCommand : IRequest<BaseCommandResponse>
     {

@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Application.Exceptions;
 
-namespace Application.CQRS.Suppliers.Commands.DeleteSupplier
+namespace Application.CQRS.Supplier.Commands.DeleteSupplier
 {
     public class DeleteSupplierCommandHandler : IRequestHandler<DeleteSupplierCommand, BaseCommandResponse>
     {
