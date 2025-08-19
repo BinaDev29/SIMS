@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\inwardtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\inwardtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\godown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\godown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\outwardtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\outwardtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\common\\basedomainentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\common\\basedomainentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Supplier.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Supplier.cs",
+              "RelativeToolTip": "Domain\\Models\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:39:29.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Customer.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Customer.cs",
+              "RelativeToolTip": "Domain\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:40:03.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
+              "RelativeToolTip": "Domain\\Models\\Employee.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:34:41.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Godown.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Godown.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Godown.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Godown.cs",
+              "RelativeToolTip": "Domain\\Models\\Godown.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:34:58.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InwardTransaction.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\InwardTransaction.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\InwardTransaction.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\InwardTransaction.cs",
+              "RelativeToolTip": "Domain\\Models\\InwardTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:35:15.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Item.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Item.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
+              "RelativeToolTip": "Domain\\Models\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:39:00.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReturnTransaction.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\ReturnTransaction.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\ReturnTransaction.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\ReturnTransaction.cs",
+              "RelativeToolTip": "Domain\\Models\\ReturnTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:35:51.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OutwardTransaction.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\OutwardTransaction.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\OutwardTransaction.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\OutwardTransaction.cs",
+              "RelativeToolTip": "Domain\\Models\\OutwardTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:35:36.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseDomainEntity.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Common\\BaseDomainEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Common\\BaseDomainEntity.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Common\\BaseDomainEntity.cs",
+              "RelativeToolTip": "Domain\\Common\\BaseDomainEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:30:59.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Domain",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-19T07:30:18.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
