@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Application.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Application.Contracts;
+using Persistence;
 using Persistence.Repositories;
 
 namespace Persistence
@@ -20,6 +15,12 @@ namespace Persistence
                 options.UseSqlServer(configuration.GetConnectionString("InventoryConnectionString")));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IInwardTransactionRepository, InwardTransactionRepository>();
+            services.AddScoped<IOutwardTransactionRepository, OutwardTransactionRepository>();
+            services.AddScoped<IReturnTransactionRepository, ReturnTransactionRepository>();
+            services.AddScoped<IItemRepository, ItemRepository>();
+            services.AddScoped<IGodownRepository, GodownRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>(); // << This is the missing line
 
             return services;
         }

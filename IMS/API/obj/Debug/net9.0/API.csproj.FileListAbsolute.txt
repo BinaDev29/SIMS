@@ -15,6 +15,7 @@ F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\FluentValidation.Dependen
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Humanizer.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\MediatR.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\MediatR.Contracts.dll
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Microsoft.Build.Locator.dll

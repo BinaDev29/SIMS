@@ -8,6 +8,8 @@ using Application.DTOs.Items;
 using Application.DTOs.OutwardTransactions;
 using Application.DTOs.ReturnTransactions;
 using Application.DTOs.Suppliers;
+using Application.DTOs.Users;
+using Application.DTOs.Reports;
 
 namespace Application.Profiles
 {
@@ -26,12 +28,14 @@ namespace Application.Profiles
             CreateMap<Employee, CreateEmployeeDto>().ReverseMap();
             CreateMap<Employee, UpdateEmployeeDto>().ReverseMap();
             CreateMap<EmployeeDto, UpdateEmployeeDto>().ReverseMap();
+            CreateMap<Employee, UserListDto>().ReverseMap();
 
             // Godown Mappings
             CreateMap<Godown, GodownDto>().ReverseMap();
             CreateMap<Godown, CreateGodownDto>().ReverseMap();
             CreateMap<Godown, UpdateGodownDto>().ReverseMap();
             CreateMap<GodownDto, UpdateGodownDto>().ReverseMap();
+            CreateMap<Godown, GodownReportDto>().ReverseMap();
 
             // InwardTransaction Mappings
             CreateMap<InwardTransaction, InwardTransactionDto>().ReverseMap();
@@ -44,6 +48,7 @@ namespace Application.Profiles
             CreateMap<Item, CreateItemDto>().ReverseMap();
             CreateMap<Item, UpdateItemDto>().ReverseMap();
             CreateMap<ItemDto, UpdateItemDto>().ReverseMap();
+            CreateMap<Item, StockReportDto>().ReverseMap();
 
             // OutwardTransaction Mappings
             CreateMap<OutwardTransaction, OutwardTransactionDto>().ReverseMap();
