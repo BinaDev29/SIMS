@@ -17,6 +17,6 @@ namespace Domain.Models
         public DateTime? ManufacturingDate { get; set; }
         public DateTime? ExpiryDate { get; set; }
 
-        public Godown Godown { get; set; }
+        public required Godown Godown { get; set; }
     }
 }

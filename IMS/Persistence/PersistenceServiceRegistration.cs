@@ -21,7 +21,7 @@ namespace Persistence
             services.AddScoped<IItemRepository, ItemRepository>();
             services.AddScoped<IGodownRepository, GodownRepository>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>(); // << This is the missing line
-
+            services.AddScoped<IInvoiceRepository, InvoiceRepository>();
             return services;
         }
     }
