@@ -5,6 +5,8 @@ using Application.Responses;
 using Domain.Models;
 using System.Threading.Tasks;
 using System.Threading;
+using Application.DTOs.InwardTransactions.Validators; // New using
+using System.Linq; // New using
 
 namespace Application.CQRS.InwardTransactions.Commands.CreateInwardTransaction
 {
@@ -24,9 +26,22 @@ namespace Application.CQRS.InwardTransactions.Commands.CreateInwardTransaction
         public async Task<BaseCommandResponse> Handle(CreateInwardTransactionCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
+
+            // Add validation here
+            var validator = new CreateInwardTransactionDtoValidator();
+            var validationResult = await validator.ValidateAsync(request.InwardTransactionDto, cancellationToken);
+
+            if (validationResult.IsValid == false)
+            {
+                response.Success = false;
+                response.ValidationErrors = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
+                return response;
+            }
+
             var inwardTransaction = _mapper.Map<InwardTransaction>(request.InwardTransactionDto);
 
-            var itemToUpdate = await _itemRepository.GetByIdAsync(request.InwardTransactionDto.ItemId);
+            var itemToUpdate = await _itemRepository.GetByIdAsync(request.InwardTransactionDto.ItemId, cancellationToken);
+           
 
             if (itemToUpdate == null)
             {
@@ -37,8 +52,8 @@ namespace Application.CQRS.InwardTransactions.Commands.CreateInwardTransaction
 
             itemToUpdate.StockQuantity += request.InwardTransactionDto.Quantity;
 
-            await _inwardTransactionRepository.AddAsync(inwardTransaction);
-            await _itemRepository.UpdateAsync(itemToUpdate);
+            await _inwardTransactionRepository.AddAsync(inwardTransaction, cancellationToken);
+            await _itemRepository.UpdateAsync(itemToUpdate, cancellationToken);
 
             response.Success = true;
             response.Message = "Inward Transaction and Item Stock Updated Successfully";

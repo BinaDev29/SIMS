@@ -5,6 +5,8 @@ using Application.Responses;
 using Domain.Models;
 using System.Threading.Tasks;
 using System.Threading;
+using Application.DTOs.OutwardTransactions.Validators; // New using
+using System.Linq; // New using
 
 namespace Application.CQRS.OutwardTransactions.Commands.CreateOutwardTransaction
 {
@@ -24,10 +26,21 @@ namespace Application.CQRS.OutwardTransactions.Commands.CreateOutwardTransaction
         public async Task<BaseCommandResponse> Handle(CreateOutwardTransactionCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
+
+            // 1. የዳታ ማረጋገጫ (Validation)
+            var validator = new CreateOutwardTransactionDtoValidator();
+            var validationResult = await validator.ValidateAsync(request.OutwardTransactionDto, cancellationToken);
+
+            if (validationResult.IsValid == false)
+            {
+                response.Success = false;
+                response.ValidationErrors = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
+                return response;
+            }
+
             var outwardTransaction = _mapper.Map<OutwardTransaction>(request.OutwardTransactionDto);
 
-            // የእቃውን stock መጠን ለመቀነስ ኮዱን እንጨምራለን።
-            var itemToUpdate = await _itemRepository.GetByIdAsync(request.OutwardTransactionDto.ItemId);
+            var itemToUpdate = await _itemRepository.GetByIdAsync(request.OutwardTransactionDto.ItemId, cancellationToken);
 
             if (itemToUpdate == null)
             {
@@ -36,7 +49,6 @@ namespace Application.CQRS.OutwardTransactions.Commands.CreateOutwardTransaction
                 return response;
             }
 
-            // የእቃው StockQuantity ከሚወጣው መጠን ያነሰ ከሆነ ስህተት እንመዘግባለን
             if (itemToUpdate.StockQuantity < request.OutwardTransactionDto.Quantity)
             {
                 response.Success = false;
@@ -44,11 +56,11 @@ namespace Application.CQRS.OutwardTransactions.Commands.CreateOutwardTransaction
                 return response;
             }
 
-            // የstock መጠኑን ይቀንሳል።
             itemToUpdate.StockQuantity -= request.OutwardTransactionDto.Quantity;
 
-            await _outwardTransactionRepository.AddAsync(outwardTransaction);
-            await _itemRepository.UpdateAsync(itemToUpdate);
+            // pass cancellationToken
+            await _outwardTransactionRepository.AddAsync(outwardTransaction, cancellationToken);
+            await _itemRepository.UpdateAsync(itemToUpdate, cancellationToken);
 
             response.Success = true;
             response.Message = "Outward Transaction and Item Stock Updated Successfully";

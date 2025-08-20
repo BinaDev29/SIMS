@@ -1,3 +1,11 @@
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.csproj.AssemblyReference.cache
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rpswa.dswa.cache.json
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.GeneratedMSBuildEditorConfig.editorconfig
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.AssemblyInfoInputs.cache
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.AssemblyInfo.cs
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.csproj.CoreCompileInputs.cache
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cache
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.sourcelink.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\appsettings.Development.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\appsettings.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\API.staticwebassets.endpoints.json
@@ -10,6 +18,7 @@ F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\AutoMapper.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Azure.Core.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Azure.Identity.dll
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\BCrypt.Net-Next.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\FluentValidation.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Humanizer.dll
@@ -145,15 +154,7 @@ F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Persistence.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Application.pdb
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Persistence.pdb
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Domain.pdb
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.csproj.AssemblyReference.cache
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rpswa.dswa.cache.json
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.GeneratedMSBuildEditorConfig.editorconfig
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.AssemblyInfoInputs.cache
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.AssemblyInfo.cs
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.csproj.CoreCompileInputs.cache
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cs
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cache
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.sourcelink.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -169,4 +170,3 @@ F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\refint\API.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.pdb
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\ref\API.dll
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\BCrypt.Net-Next.dll

@@ -1,12 +1,14 @@
-﻿using Domain.Common;
+﻿// Persistence/Repositories/GenericRepository.cs
+using Application.Contracts;
+using Persistence;
 using Microsoft.EntityFrameworkCore;
-using Application.Contracts; // This reference is now working
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Persistence.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseDomainEntity
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly SIMSDbContext _dbContext;
 
@@ -15,33 +17,39 @@ namespace Persistence.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public async Task<T?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
         {
-            return await _dbContext.Set<T>().ToListAsync();
+            return await _dbContext.Set<T>().FindAsync(new object[] { id }, cancellationToken);
         }
 
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default)
         {
-            return await _dbContext.Set<T>().FindAsync(id);
+            return await _dbContext.Set<T>().AsNoTracking().ToListAsync(cancellationToken);
         }
 
-        public async Task<T> AddAsync(T entity)
+        public async Task<bool> Exists(int id, CancellationToken cancellationToken = default)
         {
-            await _dbContext.Set<T>().AddAsync(entity);
-            await _dbContext.SaveChangesAsync();
+            var entity = await GetByIdAsync(id, cancellationToken);
+            return entity != null;
+        }
+
+        public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
+        {
+            await _dbContext.AddAsync(entity, cancellationToken);
+            await _dbContext.SaveChangesAsync(cancellationToken);
             return entity;
         }
 
-        public async Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
-            await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task DeleteAsync(T entity)
+        public async Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
         {
             _dbContext.Set<T>().Remove(entity);
-            await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync(cancellationToken);
         }
     }
 }
