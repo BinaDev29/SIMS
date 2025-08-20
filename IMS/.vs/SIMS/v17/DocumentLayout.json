@@ -3,6 +3,70 @@
   "WorkspaceRootPath": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4B3E588-252C-4867-BC4D-53FB950D19B1}|API\\API.csproj|f:\\@internship 2017\\inventery\\ims\\api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B3E588-252C-4867-BC4D-53FB950D19B1}|API\\API.csproj|solutionrelative:api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\responses\\basecommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\responses\\basecommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\cqrs\\employees\\commands\\createemployee\\createemployeecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\cqrs\\employees\\commands\\createemployee\\createemployeecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\invoices\\createinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\invoices\\createinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\migrations\\20250820120431_intialcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\migrations\\20250820120431_intialcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\invoices\\invoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\invoices\\invoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\invoices\\invoicedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\invoices\\invoicedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\godown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\godown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\repositories\\invoicedetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\repositories\\invoicedetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\repositories\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\repositories\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\contracts\\iinvoicedetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\contracts\\iinvoicedetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\contracts\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\contracts\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\simsdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\simsdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\simsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\simsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\cqrs\\users\\queries\\getuserslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\cqrs\\users\\queries\\getuserslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\cqrs\\users\\queries\\getuserbyusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4B3E588-252C-4867-BC4D-53FB950D19B1}|API\\API.csproj|f:\\@internship 2017\\inventery\\ims\\api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4B3E588-252C-4867-BC4D-53FB950D19B1}|API\\API.csproj|solutionrelative:api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\users\\userlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\dtos\\users\\userlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,10 +149,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\cqrs\\report\\queries\\getgodownreportqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|solutionrelative:application\\cqrs\\report\\queries\\getgodownreportqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|f:\\@internship 2017\\inventery\\ims\\domain\\models\\godown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EEAF3C6-816E-45CB-B5B7-3F6820BCD6B5}|Domain\\Domain.csproj|solutionrelative:domain\\models\\godown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4B3E588-252C-4867-BC4D-53FB950D19B1}|API\\API.csproj|f:\\@internship 2017\\inventery\\ims\\api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,14 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\repositories\\returntransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\repositories\\returntransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\simsdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\simsdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|f:\\@internship 2017\\inventery\\ims\\persistence\\simsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D008B61-08B9-4C57-8E81-30CDE5649363}|Persistence\\Persistence.csproj|solutionrelative:persistence\\simsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A748B51-388A-4BA4-8949-CF8555518B83}|Application\\Application.csproj|f:\\@internship 2017\\inventery\\ims\\application\\dtos\\users\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -226,258 +274,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetUsersListQueryHandler.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
-              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
-              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T11:23:19.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetUsersListQuery.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
-              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
-              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Title": "BaseCommandResponse.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Responses\\BaseCommandResponse.cs",
+              "RelativeDocumentMoniker": "Application\\Responses\\BaseCommandResponse.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Responses\\BaseCommandResponse.cs",
+              "RelativeToolTip": "Application\\Responses\\BaseCommandResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T11:22:03.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "JwtTokenGenerator.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Auth\\JwtTokenGenerator.cs",
-              "RelativeDocumentMoniker": "API\\Auth\\JwtTokenGenerator.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Auth\\JwtTokenGenerator.cs",
-              "RelativeToolTip": "API\\Auth\\JwtTokenGenerator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:46:17.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "Persistence\\Repositories\\EmployeeRepository.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\EmployeeRepository.cs",
-              "RelativeToolTip": "Persistence\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:35:54.016Z",
+              "WhenOpened": "2025-08-20T12:19:00.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetUserByUsernameQuery.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
-              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
-              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Title": "CreateEmployeeCommandHandler.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Employees\\Commands\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Employees\\Commands\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Employees\\Commands\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "RelativeToolTip": "Application\\CQRS\\Employees\\Commands\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T10:59:59.573Z",
+              "WhenOpened": "2025-08-20T12:15:57.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateItemDto.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\UpdateItemDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Items\\UpdateItemDto.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\UpdateItemDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Items\\UpdateItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:54:39.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateItemDto.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\CreateItemDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Items\\CreateItemDto.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\CreateItemDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Items\\CreateItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:54:15.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Item.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Item.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
-              "RelativeToolTip": "Domain\\Models\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:08:09.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Persistence",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Persistence.csproj",
-              "RelativeDocumentMoniker": "Persistence\\Persistence.csproj",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Persistence.csproj",
-              "RelativeToolTip": "Persistence\\Persistence.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-20T08:20:02.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Contracts\\IEmployeeRepository.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IEmployeeRepository.cs",
-              "RelativeToolTip": "Application\\Contracts\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:35:19.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetUserByUsernameQueryHandler.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
-              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
-              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T11:00:24.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
-              "RelativeToolTip": "Domain\\Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:34:18.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserListDto.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Users\\UserListDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Users\\UserListDto.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Users\\UserListDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Users\\UserListDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:30:37.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "LoginController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\LoginController.cs",
               "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\LoginController.cs",
               "RelativeToolTip": "API\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T07:49:07.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\EmployeeController.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "API\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "20250820120431_IntialCreation.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Migrations\\20250820120431_IntialCreation.cs",
+              "RelativeDocumentMoniker": "Persistence\\Migrations\\20250820120431_IntialCreation.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Migrations\\20250820120431_IntialCreation.cs",
+              "RelativeToolTip": "Persistence\\Migrations\\20250820120431_IntialCreation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:36:01.545Z",
+              "WhenOpened": "2025-08-20T12:04:32.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\CustomerController.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "API\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "InvoiceDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Invoices\\InvoiceDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Invoices\\InvoiceDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Invoices\\InvoiceDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Invoices\\InvoiceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:29:32.427Z",
+              "WhenOpened": "2025-08-20T11:50:50.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GodownController.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\GodownController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\GodownController.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\GodownController.cs",
-              "RelativeToolTip": "API\\Controllers\\GodownController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "InvoiceDetailDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Invoices\\InvoiceDetailDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Invoices\\InvoiceDetailDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Invoices\\InvoiceDetailDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Invoices\\InvoiceDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:34:46.616Z",
+              "WhenOpened": "2025-08-20T11:51:16.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Profiles\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "Application\\Profiles\\MappingProfile.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Profiles\\MappingProfile.cs",
-              "RelativeToolTip": "Application\\Profiles\\MappingProfile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD4AAABXAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CreateInvoiceDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Invoices\\CreateInvoiceDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Invoices\\CreateInvoiceDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Invoices\\CreateInvoiceDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Invoices\\CreateInvoiceDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:09:01.272Z",
+              "WhenOpened": "2025-08-20T11:51:03.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PersistenceServiceRegistration.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\PersistenceServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Persistence\\PersistenceServiceRegistration.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\PersistenceServiceRegistration.cs",
-              "RelativeToolTip": "Persistence\\PersistenceServiceRegistration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Invoice.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Invoice.cs",
+              "RelativeToolTip": "Domain\\Models\\Invoice.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:54:32.981Z",
+              "WhenOpened": "2025-08-20T11:43:56.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 8,
               "Title": "Godown.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Godown.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Godown.cs",
@@ -490,7 +395,315 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvoiceDetail.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\InvoiceDetail.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\InvoiceDetail.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\InvoiceDetail.cs",
+              "RelativeToolTip": "Domain\\Models\\InvoiceDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:44:44.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InvoiceDetailRepository.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\InvoiceDetailRepository.cs",
+              "RelativeDocumentMoniker": "Persistence\\Repositories\\InvoiceDetailRepository.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\InvoiceDetailRepository.cs",
+              "RelativeToolTip": "Persistence\\Repositories\\InvoiceDetailRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:49:19.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InvoiceRepository.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\InvoiceRepository.cs",
+              "RelativeDocumentMoniker": "Persistence\\Repositories\\InvoiceRepository.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\InvoiceRepository.cs",
+              "RelativeToolTip": "Persistence\\Repositories\\InvoiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:49:02.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IInvoiceDetailRepository.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IInvoiceDetailRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\IInvoiceDetailRepository.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IInvoiceDetailRepository.cs",
+              "RelativeToolTip": "Application\\Contracts\\IInvoiceDetailRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:48:10.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IInvoiceRepository.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IInvoiceRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\IInvoiceRepository.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IInvoiceRepository.cs",
+              "RelativeToolTip": "Application\\Contracts\\IInvoiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:47:57.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SIMSDbContext.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContext.cs",
+              "RelativeDocumentMoniker": "Persistence\\SIMSDbContext.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContext.cs",
+              "RelativeToolTip": "Persistence\\SIMSDbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:54:24.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SIMSDbContextFactory.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Persistence\\SIMSDbContextFactory.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContextFactory.cs",
+              "RelativeToolTip": "Persistence\\SIMSDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:54:28.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetUsersListQueryHandler.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
+              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUsersListQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:23:19.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetUsersListQuery.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
+              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUsersListQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:22:03.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Auth\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "API\\Auth\\JwtTokenGenerator.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Auth\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "API\\Auth\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:46:17.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Persistence\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "Persistence\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:35:54.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetUserByUsernameQuery.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
+              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T10:59:59.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateItemDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\UpdateItemDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Items\\UpdateItemDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\UpdateItemDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Items\\UpdateItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:54:39.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateItemDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\CreateItemDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Items\\CreateItemDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Items\\CreateItemDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Items\\CreateItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:54:15.933Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "Item.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Item.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Item.cs",
+              "RelativeToolTip": "Domain\\Models\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:08:09.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Persistence.csproj",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Persistence.csproj",
+              "RelativeDocumentMoniker": "Persistence\\Persistence.csproj",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Persistence.csproj",
+              "RelativeToolTip": "Persistence\\Persistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-20T08:20:02.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\IEmployeeRepository.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IEmployeeRepository.cs",
+              "RelativeToolTip": "Application\\Contracts\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:35:19.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetUserByUsernameQueryHandler.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
+              "RelativeToolTip": "Application\\CQRS\\Users\\Queries\\GetUserByUsernameQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:00:24.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Domain\\Models\\Employee.cs",
+              "RelativeToolTip": "Domain\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:34:18.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserListDto.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Users\\UserListDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Users\\UserListDto.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Users\\UserListDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Users\\UserListDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:30:37.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\EmployeeController.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "API\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T06:36:01.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CustomerController.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "API\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T06:29:32.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GodownController.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\GodownController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\GodownController.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\GodownController.cs",
+              "RelativeToolTip": "API\\Controllers\\GodownController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T06:34:46.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Profiles\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Profiles\\MappingProfile.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Profiles\\MappingProfile.cs",
+              "RelativeToolTip": "Application\\Profiles\\MappingProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD4AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:09:01.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PersistenceServiceRegistration.cs",
+              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\PersistenceServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Persistence\\PersistenceServiceRegistration.cs",
+              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\PersistenceServiceRegistration.cs",
+              "RelativeToolTip": "Persistence\\PersistenceServiceRegistration.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:54:32.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "GetGodownReportQueryHandler.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Report\\Queries\\GetGodownReportQueryHandler.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\Report\\Queries\\GetGodownReportQueryHandler.cs",
@@ -498,12 +711,11 @@
               "RelativeToolTip": "Application\\CQRS\\Report\\Queries\\GetGodownReportQueryHandler.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA8wCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:17:15.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:17:15.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 35,
               "Title": "IGodownRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IGodownRepository.cs",
               "RelativeDocumentMoniker": "Application\\Contracts\\IGodownRepository.cs",
@@ -511,12 +723,11 @@
               "RelativeToolTip": "Application\\Contracts\\IGodownRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:19:44.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:19:44.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 34,
               "Title": "GodownRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\GodownRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\Repositories\\GodownRepository.cs",
@@ -524,12 +735,11 @@
               "RelativeToolTip": "Persistence\\Repositories\\GodownRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:20:14.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:20:14.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 39,
               "Title": "GetGodownReportQuery.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Report\\Queries\\GetGodownReportQuery.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\Report\\Queries\\GetGodownReportQuery.cs",
@@ -537,12 +747,11 @@
               "RelativeToolTip": "Application\\CQRS\\Report\\Queries\\GetGodownReportQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:16:34.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:16:34.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 37,
               "Title": "ReportController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ReportController.cs",
@@ -550,12 +759,11 @@
               "RelativeToolTip": "API\\Controllers\\ReportController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAmwCQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:08:26.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:08:26.578Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 38,
               "Title": "GodownReportDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Reports\\GodownReportDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Reports\\GodownReportDto.cs",
@@ -563,12 +771,11 @@
               "RelativeToolTip": "Application\\DTOs\\Reports\\GodownReportDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:04:50.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:04:50.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 41,
               "Title": "GetStockReportQueryHandler.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Report\\Queries\\GetStockReportQueryHandler.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\Report\\Queries\\GetStockReportQueryHandler.cs",
@@ -576,12 +783,11 @@
               "RelativeToolTip": "Application\\CQRS\\Report\\Queries\\GetStockReportQueryHandler.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:07:22.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:07:22.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 40,
               "Title": "StockReportDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Reports\\StockReportDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Reports\\StockReportDto.cs",
@@ -589,12 +795,11 @@
               "RelativeToolTip": "Application\\DTOs\\Reports\\StockReportDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:05:18.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:05:18.578Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 42,
               "Title": "GetStockReportQuery.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\Report\\Queries\\GetStockReportQuery.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\Report\\Queries\\GetStockReportQuery.cs",
@@ -602,25 +807,23 @@
               "RelativeToolTip": "Application\\CQRS\\Report\\Queries\\GetStockReportQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T08:06:46.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:06:46.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Application",
+              "DocumentIndex": 43,
+              "Title": "Application.csproj",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
               "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Application.csproj",
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-20T08:04:14.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T08:04:14.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -628,12 +831,11 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAiwDsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:56:31.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:56:31.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 47,
               "Title": "InwardTransactionRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\InwardTransactionRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\Repositories\\InwardTransactionRepository.cs",
@@ -641,12 +843,11 @@
               "RelativeToolTip": "Persistence\\Repositories\\InwardTransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:04:58.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:04:58.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 46,
               "Title": "ItemRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\ItemRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\Repositories\\ItemRepository.cs",
@@ -654,25 +855,23 @@
               "RelativeToolTip": "Persistence\\Repositories\\ItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:05:49.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:05:49.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "API",
+              "DocumentIndex": 45,
+              "Title": "API.csproj",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\API.csproj",
               "RelativeDocumentMoniker": "API\\API.csproj",
               "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\API.csproj",
               "RelativeToolTip": "API\\API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-20T07:42:31.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:42:31.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 48,
               "Title": "OutwardTransactionRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\OutwardTransactionRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\Repositories\\OutwardTransactionRepository.cs",
@@ -680,12 +879,11 @@
               "RelativeToolTip": "Persistence\\Repositories\\OutwardTransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:15:36.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:15:36.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 49,
               "Title": "ReturnTransactionRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\Repositories\\ReturnTransactionRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\Repositories\\ReturnTransactionRepository.cs",
@@ -693,38 +891,11 @@
               "RelativeToolTip": "Persistence\\Repositories\\ReturnTransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:18:27.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:18:27.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "SIMSDbContextFactory.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContextFactory.cs",
-              "RelativeDocumentMoniker": "Persistence\\SIMSDbContextFactory.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContextFactory.cs",
-              "RelativeToolTip": "Persistence\\SIMSDbContextFactory.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:54:28.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "SIMSDbContext.cs",
-              "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContext.cs",
-              "RelativeDocumentMoniker": "Persistence\\SIMSDbContext.cs",
-              "ToolTip": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Persistence\\SIMSDbContext.cs",
-              "RelativeToolTip": "Persistence\\SIMSDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:54:24.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 50,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\DTOs\\Users\\LoginDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Users\\LoginDto.cs",
@@ -732,12 +903,11 @@
               "RelativeToolTip": "Application\\DTOs\\Users\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:51:32.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:51:32.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 51,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -745,12 +915,11 @@
               "RelativeToolTip": "API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-20T07:47:13.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:47:13.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 52,
               "Title": "CreateReturnTransactionCommandHandler.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\ReturnTransactions\\Commands\\CreateReturnTransaction\\CreateReturnTransactionCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\ReturnTransactions\\Commands\\CreateReturnTransaction\\CreateReturnTransactionCommandHandler.cs",
@@ -758,12 +927,11 @@
               "RelativeToolTip": "Application\\CQRS\\ReturnTransactions\\Commands\\CreateReturnTransaction\\CreateReturnTransactionCommandHandler.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA6wDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:40:16.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:40:16.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 54,
               "Title": "IReturnTransactionRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IReturnTransactionRepository.cs",
               "RelativeDocumentMoniker": "Application\\Contracts\\IReturnTransactionRepository.cs",
@@ -771,12 +939,11 @@
               "RelativeToolTip": "Application\\Contracts\\IReturnTransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:18:02.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:18:02.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 53,
               "Title": "CreateOutwardTransactionCommandHandler.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\OutwardTransactions\\Commands\\CreateOutwardTransaction\\CreateOutwardTransactionCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\OutwardTransactions\\Commands\\CreateOutwardTransaction\\CreateOutwardTransactionCommandHandler.cs",
@@ -784,12 +951,11 @@
               "RelativeToolTip": "Application\\CQRS\\OutwardTransactions\\Commands\\CreateOutwardTransaction\\CreateOutwardTransactionCommandHandler.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAiwDsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:16:18.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:16:18.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 55,
               "Title": "IOutwardTransactionRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IOutwardTransactionRepository.cs",
               "RelativeDocumentMoniker": "Application\\Contracts\\IOutwardTransactionRepository.cs",
@@ -797,12 +963,11 @@
               "RelativeToolTip": "Application\\Contracts\\IOutwardTransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:14:59.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:14:59.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 57,
               "Title": "CreateInwardTransactionCommandHandler.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\CQRS\\InwardTransactions\\Commands\\CreateInwardTransaction\\CreateInwardTransactionCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\InwardTransactions\\Commands\\CreateInwardTransaction\\CreateInwardTransactionCommandHandler.cs",
@@ -810,12 +975,11 @@
               "RelativeToolTip": "Application\\CQRS\\InwardTransactions\\Commands\\CreateInwardTransaction\\CreateInwardTransactionCommandHandler.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAmwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:54:11.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:54:11.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 56,
               "Title": "IInwardTransactionRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IInwardTransactionRepository.cs",
               "RelativeDocumentMoniker": "Application\\Contracts\\IInwardTransactionRepository.cs",
@@ -823,12 +987,11 @@
               "RelativeToolTip": "Application\\Contracts\\IInwardTransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:02:51.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:02:51.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 58,
               "Title": "IItemRepository.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Contracts\\IItemRepository.cs",
               "RelativeDocumentMoniker": "Application\\Contracts\\IItemRepository.cs",
@@ -836,12 +999,11 @@
               "RelativeToolTip": "Application\\Contracts\\IItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T07:03:31.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T07:03:31.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 59,
               "Title": "ItemController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ItemController.cs",
@@ -849,12 +1011,11 @@
               "RelativeToolTip": "API\\Controllers\\ItemController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:38:09.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:38:09.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 60,
               "Title": "InwardTransactionController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\InwardTransactionController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\InwardTransactionController.cs",
@@ -862,12 +1023,11 @@
               "RelativeToolTip": "API\\Controllers\\InwardTransactionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:34:10.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:34:10.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 61,
               "Title": "OutwardTransactionController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\OutwardTransactionController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\OutwardTransactionController.cs",
@@ -875,12 +1035,11 @@
               "RelativeToolTip": "API\\Controllers\\OutwardTransactionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:33:21.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:33:21.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 62,
               "Title": "ReturnTransactionController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\ReturnTransactionController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ReturnTransactionController.cs",
@@ -888,12 +1047,11 @@
               "RelativeToolTip": "API\\Controllers\\ReturnTransactionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:32:34.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:32:34.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 63,
               "Title": "launchSettings.json",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
@@ -901,12 +1059,11 @@
               "RelativeToolTip": "API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-20T06:24:29.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:24:29.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 64,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\SupplierController.cs",
@@ -914,12 +1071,11 @@
               "RelativeToolTip": "API\\Controllers\\SupplierController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:17:49.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:17:49.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 65,
               "Title": "BaseApiController.cs",
               "DocumentMoniker": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\API\\Controllers\\BaseApiController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\BaseApiController.cs",
@@ -927,8 +1083,7 @@
               "RelativeToolTip": "API\\Controllers\\BaseApiController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:17:47.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-20T06:17:47.311Z"
             }
           ]
         }

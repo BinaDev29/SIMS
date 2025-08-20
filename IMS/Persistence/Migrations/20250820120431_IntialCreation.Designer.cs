@@ -12,7 +12,7 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(SIMSDbContext))]
-    [Migration("20250819203433_IntialCreation")]
+    [Migration("20250820120431_IntialCreation")]
     partial class IntialCreation
     {
         /// <inheritdoc />
@@ -56,27 +56,18 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Models.Employee", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("EmployeeId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Department")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EmployeeId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -90,7 +81,7 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
                 });
@@ -118,6 +109,66 @@ namespace Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Godowns");
+                });
+
+            modelBuilder.Entity("Domain.Models.Invoice", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("InvoiceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InvoiceNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Invoices");
+                });
+
+            modelBuilder.Entity("Domain.Models.InvoiceDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("InvoiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InvoiceId");
+
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("InvoiceDetails");
                 });
 
             modelBuilder.Entity("Domain.Models.InwardTransaction", b =>
@@ -162,8 +213,10 @@ namespace Persistence.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ExpiryDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("GodownId")
                         .HasColumnType("int");
@@ -172,10 +225,16 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("ManufacturingDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("StockQuantity")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("UnitPrice")
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("UnitPrice")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -276,15 +335,55 @@ namespace Persistence.Migrations
                     b.ToTable("Suppliers");
                 });
 
+            modelBuilder.Entity("Domain.Models.Invoice", b =>
+                {
+                    b.HasOne("Domain.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("Domain.Models.InvoiceDetail", b =>
+                {
+                    b.HasOne("Domain.Models.Invoice", "Invoice")
+                        .WithMany("InvoiceDetails")
+                        .HasForeignKey("InvoiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Invoice");
+
+                    b.Navigation("Item");
+                });
+
             modelBuilder.Entity("Domain.Models.Item", b =>
                 {
                     b.HasOne("Domain.Models.Godown", "Godown")
-                        .WithMany()
+                        .WithMany("Items")
                         .HasForeignKey("GodownId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Godown");
+                });
+
+            modelBuilder.Entity("Domain.Models.Godown", b =>
+                {
+                    b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("Domain.Models.Invoice", b =>
+                {
+                    b.Navigation("InvoiceDetails");
                 });
 #pragma warning restore 612, 618
         }

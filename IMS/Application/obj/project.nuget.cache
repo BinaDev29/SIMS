@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rLSapbGhGlY=",
+  "dgSpecHash": "QPkclYFDNFA=",
   "success": true,
   "projectFilePath": "F:\\@INTERNSHIP 2017\\INVENTERY\\IMS\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",

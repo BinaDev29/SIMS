@@ -25,6 +25,8 @@ namespace Persistence
         public DbSet<InwardTransaction> InwardTransactions { get; set; }
         public DbSet<OutwardTransaction> OutwardTransactions { get; set; }
         public DbSet<ReturnTransaction> ReturnTransactions { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

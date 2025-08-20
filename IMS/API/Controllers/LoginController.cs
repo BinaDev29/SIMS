@@ -5,6 +5,7 @@ using Application.Responses;
 using MediatR;
 using Application.CQRS.Users.Queries;
 using System.Threading.Tasks;
+using BCrypt.Net;
 
 namespace API.Controllers
 {
@@ -26,13 +27,12 @@ namespace API.Controllers
         {
             var response = new BaseCommandResponse();
 
-            // Query the database to find the user by username
             var user = await _mediator.Send(new GetUserByUsernameQuery(loginDto.Username));
 
-            // Check if the user exists and the password is correct
-            if (user != null && user.Password == loginDto.Password)
+            // Verify the entered password against the hashed password in the database
+            if (user != null && BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
             {
-                var token = _tokenGenerator.GenerateToken(user.Username, user.Role); // Pass role for claims
+                var token = _tokenGenerator.GenerateToken(user.Username, user.Role);
                 response.Success = true;
                 response.Message = $"Login Successful. Token: {token}";
                 return Ok(response);

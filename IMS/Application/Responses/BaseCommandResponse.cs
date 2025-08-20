@@ -1,8 +1,5 @@
-﻿using System;
+﻿// Application/Responses/BaseCommandResponse.cs
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Responses
 {
@@ -11,6 +8,6 @@ namespace Application.Responses
         public int Id { get; set; }
         public bool Success { get; set; } = true;
         public string? Message { get; set; }
-        public List<string>? Errors { get; set; }
+        public List<string> ? ValidationErrors { get; set; }
     }
 }
