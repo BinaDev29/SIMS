@@ -20,8 +20,9 @@ namespace Persistence
             services.AddScoped<IReturnTransactionRepository, ReturnTransactionRepository>();
             services.AddScoped<IItemRepository, ItemRepository>();
             services.AddScoped<IGodownRepository, GodownRepository>();
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>(); // << This is the missing line
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
             return services;
         }
     }

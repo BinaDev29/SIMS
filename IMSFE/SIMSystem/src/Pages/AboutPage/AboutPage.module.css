@@ -1,0 +1,70 @@
+.aboutContainer {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutSection {
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+.teamSection {
+    padding: 2rem 0;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.teamMember {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    padding: 2.5rem;
+    display: inline-block;
+    max-width: 400px;
+}
+
+.profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--secondary-color);
+}
+
+.memberName {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.memberRole {
+    font-size: 1rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.memberBio {
+    color: var(--text-color);
+    line-height: 1.6;
+}
