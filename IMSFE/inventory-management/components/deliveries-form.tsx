@@ -21,9 +21,26 @@ interface OutwardTransactionFormData {
   notes?: string
 }
 
+// Define specific interfaces for the API data
+interface OutwardTransaction extends OutwardTransactionFormData {
+  id: number
+}
+
+interface Customer {
+  id: number
+  name: string
+  // ... other customer properties
+}
+
+interface Godown {
+  id: number
+  name: string
+  // ... other godown properties
+}
+
 interface DeliveriesFormProps {
   onTransactionAdded?: () => void
-  editingTransaction?: any
+  editingTransaction?: OutwardTransaction // Corrected type
   onCancelEdit?: () => void
 }
 
@@ -39,8 +56,8 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [success, setSuccess] = useState("")
-  const [customers, setCustomers] = useState<any[]>([])
-  const [godowns, setGodowns] = useState<any[]>([])
+  const [customers, setCustomers] = useState<Customer[]>([]) // Corrected type
+  const [godowns, setGodowns] = useState<Godown[]>([]) // Corrected type
 
   useEffect(() => {
     const loadData = async () => {
@@ -55,8 +72,8 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
 
         if (customersData.success) setCustomers(customersData.data || [])
         if (godownsData.success) setGodowns(godownsData.data || [])
-      } catch (error) {
-        console.error("Failed to load dropdown data:", error)
+      } catch { // Corrected catch block
+        console.error("Failed to load dropdown data:")
       }
     }
 
@@ -91,7 +108,6 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
       if (result.success) {
         setSuccess(result.message)
         if (!editingTransaction) {
-          // Reset form only for new transactions
           setFormData({
             itemId: 0,
             customerId: 0,
@@ -108,7 +124,7 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
       } else {
         setError(result.message || "Operation failed")
       }
-    } catch (error) {
+    } catch { // Corrected catch block
       setError("Network error occurred")
     } finally {
       setIsLoading(false)
@@ -179,7 +195,7 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
             <Label htmlFor="itemId">Item *</Label>
             <Select
               value={formData.itemId.toString()}
-              onValueChange={(value) => handleInputChange("itemId", Number.parseInt(value))}
+              onValueChange={(value: string) => handleInputChange("itemId", Number.parseInt(value))} // Corrected type
               disabled={isLoading}
             >
               <SelectTrigger>
@@ -198,7 +214,7 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
             <Label htmlFor="customerId">Customer *</Label>
             <Select
               value={formData.customerId.toString()}
-              onValueChange={(value) => handleInputChange("customerId", Number.parseInt(value))}
+              onValueChange={(value: string) => handleInputChange("customerId", Number.parseInt(value))} // Corrected type
               disabled={isLoading}
             >
               <SelectTrigger>
@@ -218,7 +234,7 @@ export function DeliveriesForm({ onTransactionAdded, editingTransaction, onCance
             <Label htmlFor="godownId">Source Godown *</Label>
             <Select
               value={formData.godownId.toString()}
-              onValueChange={(value) => handleInputChange("godownId", Number.parseInt(value))}
+              onValueChange={(value: string) => handleInputChange("godownId", Number.parseInt(value))} // Corrected type
               disabled={isLoading}
             >
               <SelectTrigger>

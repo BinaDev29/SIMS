@@ -1,39 +1,24 @@
 import { type NextRequest, NextResponse } from "next/server"
 
-const mockGodowns = [
-  {
-    id: 1,
-    name: "Main Warehouse A",
-    location: "123 Industrial Ave, Manufacturing District, City",
-    capacity: 15000,
-    description: "Primary storage facility for general goods",
-  },
-  {
-    id: 2,
-    name: "Electronics Storage B",
-    location: "456 Tech Blvd, Electronics Hub, City",
-    capacity: 8000,
-    description: "Climate-controlled storage for electronic components",
-  },
-  {
-    id: 3,
-    name: "Cold Storage C",
-    location: "789 Refrigeration St, Food District, City",
-    capacity: 5000,
-    description: "Temperature-controlled facility for perishable goods",
-  },
-]
+// Base URL for your C# backend
+const BACKEND_URL = "https://localhost:7280"
 
-let nextId = 4
+// Mock data and token generation removed.
+// The code now makes direct calls to the C# backend.
 
 export async function GET() {
   try {
-    return NextResponse.json({
-      success: true,
-      data: mockGodowns,
-      message: "Godowns retrieved successfully",
-    })
-  } catch (error) {
+    const backendUrl = `${BACKEND_URL}/api/Godown`
+    
+    const backendResponse = await fetch(backendUrl)
+    const data = await backendResponse.json()
+
+    if (backendResponse.ok) {
+      return NextResponse.json(data)
+    } else {
+      return NextResponse.json(data, { status: backendResponse.status })
+    }
+  } catch {
     return NextResponse.json(
       {
         success: false,
@@ -47,45 +32,24 @@ export async function GET() {
 export async function POST(request: NextRequest) {
   try {
     const godownData = await request.json()
+    const backendUrl = `${BACKEND_URL}/api/Godown`
 
-    // Validate required fields matching C# CreateGodownDto
-    const requiredFields = ["name", "location", "capacity"]
-    for (const field of requiredFields) {
-      if (!godownData[field]) {
-        return NextResponse.json(
-          {
-            success: false,
-            message: `${field} is required`,
-          },
-          { status: 400 },
-        )
-      }
-    }
-
-    // Validate capacity is a positive number
-    if (godownData.capacity <= 0) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Capacity must be greater than 0",
-        },
-        { status: 400 },
-      )
-    }
-
-    const newGodown = {
-      id: nextId++,
-      ...godownData,
-    }
-
-    mockGodowns.push(newGodown)
-
-    return NextResponse.json({
-      success: true,
-      data: newGodown,
-      message: "Godown Created Successfully",
+    const backendResponse = await fetch(backendUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(godownData),
     })
-  } catch (error) {
+
+    const data = await backendResponse.json()
+
+    if (backendResponse.ok) {
+      return NextResponse.json(data)
+    } else {
+      return NextResponse.json(data, { status: backendResponse.status })
+    }
+  } catch {
     return NextResponse.json(
       {
         success: false,

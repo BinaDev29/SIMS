@@ -49,7 +49,7 @@ export function DeliveriesTable({ refreshTrigger, onEditTransaction }: Deliverie
       } else {
         setError(result.message || "Failed to fetch transactions")
       }
-    } catch (error) {
+    } catch { // Corrected catch block
       setError("Network error occurred")
     } finally {
       setIsLoading(false)
@@ -76,7 +76,7 @@ export function DeliveriesTable({ refreshTrigger, onEditTransaction }: Deliverie
       } else {
         setError(result.message || "Failed to delete transaction")
       }
-    } catch (error) {
+    } catch { // Corrected catch block
       setError("Network error occurred")
     }
   }

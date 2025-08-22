@@ -7,15 +7,24 @@ import { GodownsTable } from "@/components/godowns-table"
 import { GodownsStats } from "@/components/godowns-stats"
 import { AuthGuard } from "@/components/auth-guard"
 
+// Define a type for the godown object to avoid 'any'
+interface Godown {
+  id: number
+  name: string
+  location: string
+  capacity: number
+  // Add other properties as they are defined in your backend
+}
+
 export default function GodownsPage() {
   const [refreshTrigger, setRefreshTrigger] = useState(0)
-  const [editingGodown, setEditingGodown] = useState<any>(null)
+  const [editingGodown, setEditingGodown] = useState<Godown | null>(null) // Corrected type
 
   const handleGodownAdded = () => {
     setRefreshTrigger((prev) => prev + 1)
   }
 
-  const handleEditGodown = (godown: any) => {
+  const handleEditGodown = (godown: Godown) => { // Corrected type
     setEditingGodown(godown)
   }
 

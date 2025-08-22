@@ -2,44 +2,60 @@
 
 import { useState } from "react"
 import { DashboardLayout } from "@/components/dashboard-layout"
-import { DeliveriesForm } from "@/components/deliveries-form"
-import { DeliveriesTable } from "@/components/deliveries-table"
+import { GodownsForm } from "@/components/godowns-form"
+import { GodownsTable } from "@/components/godowns-table"
+import { GodownsStats } from "@/components/godowns-stats"
 import { AuthGuard } from "@/components/auth-guard"
 
-export default function DeliveriesPage() {
-  const [refreshTrigger, setRefreshTrigger] = useState(0)
-  const [editingTransaction, setEditingTransaction] = useState<any>(null)
+// Define a type for the godown object to avoid 'any'
+interface Godown {
+  id: number
+  name: string
+  location: string
+  // Add other properties as they are defined in your backend
+}
 
-  const handleTransactionAdded = () => {
+
+export default function GodownsPage() {
+  const [refreshTrigger, setRefreshTrigger] = useState(0)
+  const [editingGodown, setEditingGodown] = useState<Godown | null>(null) // Corrected type
+
+  const handleGodownAdded = () => {
     setRefreshTrigger((prev) => prev + 1)
   }
 
-  const handleEditTransaction = (transaction: any) => {
-    setEditingTransaction(transaction)
+  const handleEditGodown = (godown: Godown) => { // Corrected type
+    setEditingGodown(godown)
   }
 
   const handleCancelEdit = () => {
-    setEditingTransaction(null)
+    setEditingGodown(null)
   }
 
   return (
-    <AuthGuard>
+    <AuthGuard requiredRole="Manager">
       <DashboardLayout>
         <div className="flex-1 space-y-6 p-6">
           <div>
             <h1 className="text-3xl font-bold text-foreground font-[family-name:var(--font-space-grotesk)]">
-              Outward Transactions
+              Godown Management
             </h1>
-            <p className="text-muted-foreground">Record items leaving the warehouse to customers</p>
+            <p className="text-muted-foreground">Manage warehouse and storage locations</p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-2">
-            <DeliveriesForm
-              onTransactionAdded={handleTransactionAdded}
-              editingTransaction={editingTransaction}
-              onCancelEdit={handleCancelEdit}
-            />
-            <DeliveriesTable refreshTrigger={refreshTrigger} onEditTransaction={handleEditTransaction} />
+          <GodownsStats refreshTrigger={refreshTrigger} />
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div className="lg:col-span-2">
+              <GodownsTable refreshTrigger={refreshTrigger} onEditGodown={handleEditGodown} />
+            </div>
+            <div>
+              <GodownsForm
+                onGodownAdded={handleGodownAdded}
+                editingGodown={editingGodown}
+                onCancelEdit={handleCancelEdit}
+              />
+            </div>
           </div>
         </div>
       </DashboardLayout>

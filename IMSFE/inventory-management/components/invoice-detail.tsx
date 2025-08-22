@@ -1,52 +1,87 @@
 "use client"
 
 import Link from "next/link"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Separator } from "@/components/ui/separator"
-import { ArrowLeft, Download, Mail, Printer } from "lucide-react"
+import { ArrowLeft, Download, Mail, Printer, AlertCircle } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
+import { AuthService } from "@/lib/auth"
+
+// Define a type-safe interface for the invoice data
+interface InvoiceItem {
+  id: number
+  description: string
+  quantity: number
+  unitPrice: number
+  total: number
+}
+
+interface Customer {
+  name: string
+  address: string
+  email: string
+  phone: string
+}
+
+interface Invoice {
+  id: string
+  date: string
+  dueDate: string
+  status: "paid" | "pending" | "overdue"
+  customer: Customer
+  items: InvoiceItem[]
+  subtotal: number
+  tax: number
+  total: number
+  notes?: string
+}
 
 interface InvoiceDetailProps {
   invoiceId: string
 }
 
-// Mock data - in real app this would come from API
-const invoiceData = {
-  id: "INV-2024-001",
-  date: "2024-01-15",
-  dueDate: "2024-02-15",
-  status: "paid",
-  customer: {
-    name: "Customer ABC Corp.",
-    address: "123 Business Street\nCity, State 12345\nCountry",
-    email: "billing@abc-corp.com",
-    phone: "+1 (555) 123-4567",
-  },
-  items: [
-    {
-      id: 1,
-      description: "Product A - Electronics",
-      quantity: 10,
-      unitPrice: 125.0,
-      total: 1250.0,
-    },
-    {
-      id: 2,
-      description: "Product B - Furniture",
-      quantity: 5,
-      unitPrice: 240.0,
-      total: 1200.0,
-    },
-  ],
-  subtotal: 2450.0,
-  tax: 0.0,
-  total: 2450.0,
-  notes: "Thank you for your business!",
-}
-
 export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
+  const [invoice, setInvoice] = useState<Invoice | null>(null)
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState("")
+
+  useEffect(() => {
+    const fetchInvoice = async () => {
+      try {
+        setIsLoading(true)
+        setError("")
+        // Fetch invoice data from API based on the invoiceId prop
+        const response = await fetch(`/api/invoices/${invoiceId}`, {
+          headers: {
+            ...AuthService.getAuthHeaders(),
+          },
+        })
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch invoice")
+        }
+
+        const result = await response.json()
+        setInvoice(result.data)
+      } catch (error: unknown) {
+        setError((error as Error).message || "Network error occurred.")
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    if (invoiceId) {
+      fetchInvoice()
+    } else {
+      setIsLoading(false)
+      setError("No invoice ID provided.")
+    }
+  }, [invoiceId])
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case "paid":
@@ -58,6 +93,30 @@ export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
       default:
         return "bg-gray-100 text-gray-800"
     }
+  }
+
+  if (isLoading) {
+    return (
+      <Card>
+        <CardContent className="p-6 text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-accent mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading invoice...</p>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  if (error || !invoice) {
+    return (
+      <Card>
+        <CardContent className="p-6">
+          <Alert variant="destructive">
+            <AlertCircle className="h-4 w-4" />
+            <AlertDescription>{error || "Invoice not found."}</AlertDescription>
+          </Alert>
+        </CardContent>
+      </Card>
+    )
   }
 
   return (
@@ -73,7 +132,7 @@ export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
           </Link>
           <div>
             <h1 className="text-3xl font-bold text-foreground font-[family-name:var(--font-space-grotesk)]">
-              {invoiceData.id}
+              {invoice.id}
             </h1>
             <p className="text-muted-foreground">Invoice details and line items</p>
           </div>
@@ -103,25 +162,25 @@ export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
           <CardContent className="space-y-4">
             <div className="flex justify-between">
               <span className="text-muted-foreground">Invoice ID:</span>
-              <span className="font-medium">{invoiceData.id}</span>
+              <span className="font-medium">{invoice.id}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Invoice Date:</span>
-              <span className="font-medium">{invoiceData.date}</span>
+              <span className="font-medium">{invoice.date}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Due Date:</span>
-              <span className="font-medium">{invoiceData.dueDate}</span>
+              <span className="font-medium">{invoice.dueDate}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Status:</span>
-              <Badge className={getStatusColor(invoiceData.status)} variant="secondary">
-                {invoiceData.status}
+              <Badge className={getStatusColor(invoice.status)} variant="secondary">
+                {invoice.status}
               </Badge>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Total Amount:</span>
-              <span className="font-bold text-lg">${invoiceData.total.toFixed(2)}</span>
+              <span className="font-bold text-lg">${invoice.total.toFixed(2)}</span>
             </div>
           </CardContent>
         </Card>
@@ -133,19 +192,19 @@ export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
           <CardContent className="space-y-4">
             <div>
               <span className="text-muted-foreground">Name:</span>
-              <p className="font-medium">{invoiceData.customer.name}</p>
+              <p className="font-medium">{invoice.customer.name}</p>
             </div>
             <div>
               <span className="text-muted-foreground">Address:</span>
-              <p className="font-medium whitespace-pre-line">{invoiceData.customer.address}</p>
+              <p className="font-medium whitespace-pre-line">{invoice.customer.address}</p>
             </div>
             <div>
               <span className="text-muted-foreground">Email:</span>
-              <p className="font-medium">{invoiceData.customer.email}</p>
+              <p className="font-medium">{invoice.customer.email}</p>
             </div>
             <div>
               <span className="text-muted-foreground">Phone:</span>
-              <p className="font-medium">{invoiceData.customer.phone}</p>
+              <p className="font-medium">{invoice.customer.phone}</p>
             </div>
           </CardContent>
         </Card>
@@ -168,7 +227,7 @@ export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {invoiceData.items.map((item) => (
+              {invoice.items.map((item) => (
                 <TableRow key={item.id}>
                   <TableCell className="font-medium">{item.description}</TableCell>
                   <TableCell>{item.quantity}</TableCell>
@@ -184,23 +243,23 @@ export function InvoiceDetail({ invoiceId }: InvoiceDetailProps) {
           <div className="space-y-2">
             <div className="flex justify-between">
               <span className="text-muted-foreground">Subtotal:</span>
-              <span>${invoiceData.subtotal.toFixed(2)}</span>
+              <span>${invoice.subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Tax:</span>
-              <span>${invoiceData.tax.toFixed(2)}</span>
+              <span>${invoice.tax.toFixed(2)}</span>
             </div>
             <Separator />
             <div className="flex justify-between text-lg font-bold">
               <span>Total:</span>
-              <span>${invoiceData.total.toFixed(2)}</span>
+              <span>${invoice.total.toFixed(2)}</span>
             </div>
           </div>
 
-          {invoiceData.notes && (
+          {invoice.notes && (
             <div className="mt-6 p-4 bg-muted rounded-lg">
               <h4 className="font-medium mb-2">Notes:</h4>
-              <p className="text-muted-foreground">{invoiceData.notes}</p>
+              <p className="text-muted-foreground">{invoice.notes}</p>
             </div>
           )}
         </CardContent>

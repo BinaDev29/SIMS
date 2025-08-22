@@ -17,9 +17,13 @@ interface CustomerFormData {
   email: string
 }
 
+interface Customer extends CustomerFormData {
+  id: number
+}
+
 interface CustomersFormProps {
   onCustomerAdded?: () => void
-  editingCustomer?: any
+  editingCustomer?: Customer
   onCancelEdit?: () => void
 }
 
@@ -60,7 +64,6 @@ export function CustomersForm({ onCustomerAdded, editingCustomer, onCancelEdit }
       if (result.success) {
         setSuccess(result.message)
         if (!editingCustomer) {
-          // Reset form only for new customers
           setFormData({
             name: "",
             contactPerson: "",
@@ -75,7 +78,7 @@ export function CustomersForm({ onCustomerAdded, editingCustomer, onCancelEdit }
       } else {
         setError(result.message || "Operation failed")
       }
-    } catch (error) {
+    } catch {
       setError("Network error occurred")
     } finally {
       setIsLoading(false)

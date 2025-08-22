@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -42,7 +41,7 @@ export function CreateInvoiceForm() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="customerId">Customer</Label>
-            <Select value={formData.customerId} onValueChange={(value) => handleInputChange("customerId", value)}>
+            <Select value={formData.customerId} onValueChange={(value: string) => handleInputChange("customerId", value)}>
               <SelectTrigger>
                 <SelectValue placeholder="Select customer" />
               </SelectTrigger>

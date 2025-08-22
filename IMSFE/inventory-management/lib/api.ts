@@ -10,6 +10,7 @@ export interface ApiResponse<T = any> {
   errors?: string[]
 }
 
+// ApiError interface
 export interface ApiError {
   message: string
   status: number
@@ -24,7 +25,7 @@ export class ApiClient {
       const data = await response.json()
 
       if (!response.ok) {
-        throw new ApiError({
+        throw new CustomApiError({
           message: data.message || `HTTP ${response.status}: ${response.statusText}`,
           status: response.status,
           errors: data.errors,
@@ -33,11 +34,11 @@ export class ApiClient {
 
       return data
     } catch (error) {
-      if (error instanceof ApiError) {
+      if (error instanceof CustomApiError) {
         throw error
       }
 
-      throw new ApiError({
+      throw new CustomApiError({
         message: "Failed to parse response",
         status: response.status,
       })
@@ -62,7 +63,7 @@ export class ApiClient {
       if (response.status === 401) {
         AuthService.logout()
         window.location.href = "/"
-        throw new ApiError({
+        throw new CustomApiError({
           message: "Session expired. Please login again.",
           status: 401,
         })
@@ -70,12 +71,12 @@ export class ApiClient {
 
       return await this.handleResponse<T>(response)
     } catch (error) {
-      if (error instanceof ApiError) {
+      if (error instanceof CustomApiError) {
         throw error
       }
 
       // Network or other errors
-      throw new ApiError({
+      throw new CustomApiError({
         message: "Network error occurred. Please check your connection.",
         status: 0,
       })
@@ -110,6 +111,7 @@ export class ApiClient {
     return this.get<any[]>("/api/customers")
   }
 
+  // Corrected the method name and syntax
   static async createCustomer(customerData: any) {
     return this.post("/api/customers", customerData)
   }
@@ -155,8 +157,8 @@ export class ApiClient {
   }
 }
 
-// Custom error class for API errors
-class ApiError extends Error {
+// Custom error class for API errors - This must be exported
+export class CustomApiError extends Error {
   public status: number
   public errors?: string[]
 
@@ -170,7 +172,7 @@ class ApiError extends Error {
 
 // Utility functions for error handling
 export const handleApiError = (error: unknown): string => {
-  if (error instanceof ApiError) {
+  if (error instanceof CustomApiError) {
     if (error.errors && error.errors.length > 0) {
       return error.errors.join(", ")
     }
@@ -187,25 +189,25 @@ export const handleApiError = (error: unknown): string => {
 export const useApiCall = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string>("")
-  \
-  const execute = async <T>(apiCall: () => Promise<ApiResponse<T>>)
-  : Promise<T | null> =>
-  setIsLoading(true)
-  setError("")
 
-  try {
-    const response = await apiCall()
-    if (response.success) {
-      return response.data || null
-    } else {
-      setError(response.message)
+  const execute = async <T>(apiCall: () => Promise<ApiResponse<T>>): Promise<T | null> => {
+    setIsLoading(true)
+    setError("")
+
+    try {
+      const response = await apiCall()
+      if (response.success) {
+        return response.data || null
+      } else {
+        setError(response.message)
+        return null
+      }
+    } catch (error) {
+      setError(handleApiError(error))
       return null
+    } finally {
+      setIsLoading(false)
     }
-  } catch (error) {
-    setError(handleApiError(error))
-    return null
-  } finally {
-    setIsLoading(false)
   }
 
   return { execute, isLoading, error, setError }

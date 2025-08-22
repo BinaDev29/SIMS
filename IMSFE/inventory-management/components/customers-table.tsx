@@ -42,7 +42,7 @@ export function CustomersTable({ refreshTrigger, onEditCustomer }: CustomersTabl
       } else {
         setError(result.message || "Failed to fetch customers")
       }
-    } catch (error) {
+    } catch {
       setError("Network error occurred")
     } finally {
       setIsLoading(false)
@@ -69,7 +69,7 @@ export function CustomersTable({ refreshTrigger, onEditCustomer }: CustomersTabl
       } else {
         setError(result.message || "Failed to delete customer")
       }
-    } catch (error) {
+    } catch {
       setError("Network error occurred")
     }
   }

@@ -1,5 +1,12 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Warehouse, Package, AlertTriangle, TrendingUp } from "lucide-react"
+
+// GodownsPage.tsx ከላከው refreshTrigger ን ለመቀበል የጎደለውን interface አክልን
+interface GodownsStatsProps {
+  refreshTrigger: number;
+}
 
 const stats = [
   {
@@ -36,7 +43,8 @@ const stats = [
   },
 ]
 
-export function GodownsStats() {
+// ኮምፖነንቱ አሁን props ን ይቀበላል
+export function GodownsStats({ refreshTrigger }: GodownsStatsProps) {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
       {stats.map((stat) => (

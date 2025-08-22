@@ -1,7 +1,7 @@
 "use client"
 
-import type React from "react"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -11,6 +11,7 @@ import { AuthService } from "@/lib/auth"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 
 export function LoginForm() {
+  const router = useRouter()
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
@@ -21,17 +22,25 @@ export function LoginForm() {
     setIsLoading(true)
     setError("")
 
+    // Simple client-side validation
+    if (!username || !password) {
+      setError("Username and password are required.")
+      setIsLoading(false)
+      return
+    }
+
     try {
       const result = await AuthService.login(username, password)
 
       if (result.success) {
-        // Redirect to dashboard on successful login
-        window.location.href = "/dashboard"
+        // Redirect to dashboard on successful login using router.push
+        router.push("/dashboard")
       } else {
-        setError(result.message)
+        setError(result.message || "Login failed. Please check your credentials.")
       }
-    } catch (error) {
-      setError("An unexpected error occurred. Please try again.")
+    } catch (error: unknown) {
+      // Use the actual error message from the catch block
+      setError((error as Error).message || "An unexpected error occurred. Please try again.")
     } finally {
       setIsLoading(false)
     }

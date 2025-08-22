@@ -16,6 +16,7 @@ interface Godown {
   description?: string
 }
 
+// GodownsTableProps ን አሁን በትክክል ተሰርቷል
 interface GodownsTableProps {
   refreshTrigger?: number
   onEditGodown?: (godown: Godown) => void
@@ -35,15 +36,14 @@ export function GodownsTable({ refreshTrigger, onEditGodown }: GodownsTableProps
         },
       })
 
-      const result = await response.json()
-
-      if (result.success) {
-        setGodowns(result.data || [])
-      } else {
-        setError(result.message || "Failed to fetch godowns")
+      if (!response.ok) {
+        throw new Error("Failed to fetch godowns")
       }
-    } catch (error) {
-      setError("Network error occurred")
+
+      const result = await response.json()
+      setGodowns(result.data || [])
+    } catch (error: unknown) {
+      setError((error as Error).message || "Network error occurred")
     } finally {
       setIsLoading(false)
     }
@@ -62,6 +62,10 @@ export function GodownsTable({ refreshTrigger, onEditGodown }: GodownsTableProps
         },
       })
 
+      if (!response.ok) {
+        throw new Error("Failed to delete godown")
+      }
+
       const result = await response.json()
 
       if (result.success) {
@@ -69,8 +73,8 @@ export function GodownsTable({ refreshTrigger, onEditGodown }: GodownsTableProps
       } else {
         setError(result.message || "Failed to delete godown")
       }
-    } catch (error) {
-      setError("Network error occurred")
+    } catch (error: unknown) {
+      setError((error as Error).message || "Network error occurred")
     }
   }
 

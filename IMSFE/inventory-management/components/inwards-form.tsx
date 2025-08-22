@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -9,10 +7,23 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { Package } from "lucide-react"
+import { Package, AlertCircle } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
+import { AuthService } from "@/lib/auth"
+
+// Define a type-safe interface for the form data
+interface InwardsFormData {
+  transactionDate: string
+  itemId: string
+  supplierId: string
+  godownId: string
+  quantity: string
+  unitPrice: string
+  notes: string
+}
 
 export function InwardsForm() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<InwardsFormData>({
     transactionDate: "",
     itemId: "",
     supplierId: "",
@@ -21,14 +32,57 @@ export function InwardsForm() {
     unitPrice: "",
     notes: "",
   })
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState("")
+  const [success, setSuccess] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Inwards transaction:", formData)
-    // TODO: Implement API call
+    setIsLoading(true)
+    setError("")
+    setSuccess("")
+
+    try {
+      // Convert number fields to the correct type before sending
+      const payload = {
+        ...formData,
+        quantity: Number.parseFloat(formData.quantity) || 0,
+        unitPrice: Number.parseFloat(formData.unitPrice) || 0,
+      }
+
+      const response = await fetch("/api/inwards", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...AuthService.getAuthHeaders(),
+        },
+        body: JSON.stringify(payload),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSuccess(result.message || "Transaction recorded successfully!")
+        setFormData({
+          transactionDate: "",
+          itemId: "",
+          supplierId: "",
+          godownId: "",
+          quantity: "",
+          unitPrice: "",
+          notes: "",
+        })
+      } else {
+        setError(result.message || "Failed to record transaction.")
+      }
+    } catch (error: unknown) {
+      setError("Network error occurred: " + (error as Error).message)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field: keyof InwardsFormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
@@ -42,6 +96,18 @@ export function InwardsForm() {
         <CardDescription>Record items received from suppliers</CardDescription>
       </CardHeader>
       <CardContent>
+        {error && (
+          <Alert variant="destructive" className="mb-4">
+            <AlertCircle className="h-4 w-4" />
+            <AlertDescription>{error}</AlertDescription>
+          </Alert>
+        )}
+        {success && (
+          <Alert className="mb-4 border-green-200 bg-green-50">
+            <AlertCircle className="h-4 w-4 text-green-600" />
+            <AlertDescription className="text-green-800">{success}</AlertDescription>
+          </Alert>
+        )}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
@@ -52,6 +118,7 @@ export function InwardsForm() {
                 value={formData.transactionDate}
                 onChange={(e) => handleInputChange("transactionDate", e.target.value)}
                 required
+                disabled={isLoading}
               />
             </div>
             <div className="space-y-2">
@@ -63,13 +130,14 @@ export function InwardsForm() {
                 value={formData.quantity}
                 onChange={(e) => handleInputChange("quantity", e.target.value)}
                 required
+                disabled={isLoading}
               />
             </div>
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="itemId">Item</Label>
-            <Select value={formData.itemId} onValueChange={(value) => handleInputChange("itemId", value)}>
+            <Select value={formData.itemId} onValueChange={(value: string) => handleInputChange("itemId", value)}>
               <SelectTrigger>
                 <SelectValue placeholder="Select an item" />
               </SelectTrigger>
@@ -83,7 +151,7 @@ export function InwardsForm() {
 
           <div className="space-y-2">
             <Label htmlFor="supplierId">Supplier</Label>
-            <Select value={formData.supplierId} onValueChange={(value) => handleInputChange("supplierId", value)}>
+            <Select value={formData.supplierId} onValueChange={(value: string) => handleInputChange("supplierId", value)}>
               <SelectTrigger>
                 <SelectValue placeholder="Select a supplier" />
               </SelectTrigger>
@@ -98,7 +166,7 @@ export function InwardsForm() {
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
               <Label htmlFor="godownId">Godown</Label>
-              <Select value={formData.godownId} onValueChange={(value) => handleInputChange("godownId", value)}>
+              <Select value={formData.godownId} onValueChange={(value: string) => handleInputChange("godownId", value)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select godown" />
                 </SelectTrigger>
@@ -119,6 +187,7 @@ export function InwardsForm() {
                 value={formData.unitPrice}
                 onChange={(e) => handleInputChange("unitPrice", e.target.value)}
                 required
+                disabled={isLoading}
               />
             </div>
           </div>
@@ -131,11 +200,12 @@ export function InwardsForm() {
               value={formData.notes}
               onChange={(e) => handleInputChange("notes", e.target.value)}
               rows={3}
+              disabled={isLoading}
             />
           </div>
 
-          <Button type="submit" className="w-full bg-accent hover:bg-accent/90">
-            Record Inward Transaction
+          <Button type="submit" className="w-full bg-accent hover:bg-accent/90" disabled={isLoading}>
+            {isLoading ? "Recording..." : "Record Inward Transaction"}
           </Button>
         </form>
       </CardContent>

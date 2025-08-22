@@ -1,51 +1,23 @@
 import { type NextRequest, NextResponse } from "next/server"
 
-// Import mock data from parent route
-const mockGodowns = [
-  {
-    id: 1,
-    name: "Main Warehouse A",
-    location: "123 Industrial Ave, Manufacturing District, City",
-    capacity: 15000,
-    description: "Primary storage facility for general goods",
-  },
-  {
-    id: 2,
-    name: "Electronics Storage B",
-    location: "456 Tech Blvd, Electronics Hub, City",
-    capacity: 8000,
-    description: "Climate-controlled storage for electronic components",
-  },
-  {
-    id: 3,
-    name: "Cold Storage C",
-    location: "789 Refrigeration St, Food District, City",
-    capacity: 5000,
-    description: "Temperature-controlled facility for perishable goods",
-  },
-]
+// Base URL for your C# backend
+const BACKEND_URL = "https://localhost:7280"
 
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
   try {
-    const godownId = Number.parseInt(params.id)
-    const godown = mockGodowns.find((g) => g.id === godownId)
+    const godownId = params.id
+    const backendUrl = `${BACKEND_URL}/api/Godown/${godownId}`
 
-    if (!godown) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Godown not found",
-        },
-        { status: 404 },
-      )
+    const backendResponse = await fetch(backendUrl)
+
+    if (backendResponse.ok) {
+      const data = await backendResponse.json()
+      return NextResponse.json(data)
+    } else {
+      const errorData = await backendResponse.json()
+      return NextResponse.json(errorData, { status: backendResponse.status })
     }
-
-    return NextResponse.json({
-      success: true,
-      data: godown,
-      message: "Godown retrieved successfully",
-    })
-  } catch (error) {
+  } catch { // <-- እዚህ ላይ `_error` ተወግዷል
     return NextResponse.json(
       {
         success: false,
@@ -59,57 +31,29 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
 export async function PUT(request: NextRequest, { params }: { params: { id: string } }) {
   try {
     const godownId = Number.parseInt(params.id)
-    const godownIndex = mockGodowns.findIndex((g) => g.id === godownId)
-
-    if (godownIndex === -1) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Godown not found",
-        },
-        { status: 404 },
-      )
-    }
-
     const updateData = await request.json()
 
-    // Validate required fields
-    const requiredFields = ["name", "location", "capacity"]
-    for (const field of requiredFields) {
-      if (!updateData[field]) {
-        return NextResponse.json(
-          {
-            success: false,
-            message: `${field} is required`,
-          },
-          { status: 400 },
-        )
-      }
-    }
+    const backendUrl = `${BACKEND_URL}/api/Godown`
+    
+    // The C# backend expects the ID in the body for PUT requests
+    const updatedGodownDto = { ...updateData, id: godownId }
 
-    // Validate capacity is a positive number
-    if (updateData.capacity <= 0) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Capacity must be greater than 0",
-        },
-        { status: 400 },
-      )
-    }
-
-    mockGodowns[godownIndex] = {
-      ...mockGodowns[godownIndex],
-      ...updateData,
-      id: godownId, // Ensure ID doesn't change
-    }
-
-    return NextResponse.json({
-      success: true,
-      data: mockGodowns[godownIndex],
-      message: "Godown Updated Successfully",
+    const backendResponse = await fetch(backendUrl, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedGodownDto),
     })
-  } catch (error) {
+
+    const data = await backendResponse.json()
+
+    if (backendResponse.ok) {
+      return NextResponse.json(data)
+    } else {
+      return NextResponse.json(data, { status: backendResponse.status })
+    }
+  } catch { // <-- እዚህ ላይ `error` ተወግዷል
     return NextResponse.json(
       {
         success: false,
@@ -122,26 +66,21 @@ export async function PUT(request: NextRequest, { params }: { params: { id: stri
 
 export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
   try {
-    const godownId = Number.parseInt(params.id)
-    const godownIndex = mockGodowns.findIndex((g) => g.id === godownId)
+    const godownId = params.id
+    const backendUrl = `${BACKEND_URL}/api/Godown/${godownId}`
 
-    if (godownIndex === -1) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Godown not found",
-        },
-        { status: 404 },
-      )
-    }
-
-    mockGodowns.splice(godownIndex, 1)
-
-    return NextResponse.json({
-      success: true,
-      message: "Godown Deleted Successfully",
+    const backendResponse = await fetch(backendUrl, {
+      method: "DELETE",
     })
-  } catch (error) {
+
+    const data = await backendResponse.json()
+
+    if (backendResponse.ok) {
+      return NextResponse.json(data)
+    } else {
+      return NextResponse.json(data, { status: backendResponse.status })
+    }
+  } catch { // <-- እዚህ ላይ `error` ተወግዷል
     return NextResponse.json(
       {
         success: false,
