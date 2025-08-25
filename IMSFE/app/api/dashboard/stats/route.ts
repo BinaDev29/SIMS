@@ -3,7 +3,11 @@ import { AuthService } from "@/lib/auth";
 
 export async function GET() {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/Dashboard/stats`, {
+    const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL
+    if (!baseUrl) {
+      return NextResponse.json({ success: false, message: "Backend URL is not configured." }, { status: 500 })
+    }
+    const response = await fetch(`${baseUrl}/api/Dashboard/stats`, {
       headers: {
         ...AuthService.getAuthHeaders(),
       },
