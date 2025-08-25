@@ -22,7 +22,7 @@ namespace Application.CQRS.Customers.Queries.GetCustomersList
 
         public async Task<IReadOnlyList<CustomerDto>> Handle(GetCustomersListQuery request, CancellationToken cancellationToken)
         {
-            var customers = await _customerRepository.GetAllAsync();
+            var customers = await _customerRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<CustomerDto>>(customers);
         }
     }

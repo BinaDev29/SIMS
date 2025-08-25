@@ -11,10 +11,10 @@ namespace Application.CQRS.Supplier.Queries.GetSupplierDetail
 {
     public class GetSupplierDetailQueryHandler : IRequestHandler<GetSupplierDetailQuery, SupplierDto>
     {
-        private readonly IGenericRepository<Domain.Models.Supplier> _supplierRepository;
+        private readonly ISupplierRepository _supplierRepository; // Changed to specific repository
         private readonly IMapper _mapper;
 
-        public GetSupplierDetailQueryHandler(IGenericRepository<Domain.Models.Supplier> supplierRepository, IMapper mapper)
+        public GetSupplierDetailQueryHandler(ISupplierRepository supplierRepository, IMapper mapper) // Changed to specific repository
         {
             _supplierRepository = supplierRepository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Application.CQRS.Supplier.Queries.GetSupplierDetail
 
         public async Task<SupplierDto> Handle(GetSupplierDetailQuery request, CancellationToken cancellationToken)
         {
-            var supplier = await _supplierRepository.GetByIdAsync(request.Id);
+            var supplier = await _supplierRepository.GetByIdAsync(request.Id, cancellationToken);
             if (supplier == null)
             {
                 throw new NotFoundException(nameof(Supplier), request.Id);

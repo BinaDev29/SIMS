@@ -1,12 +1,12 @@
 ﻿// Application/CQRS/Godowns/Commands/UpdateGodown/UpdateGodownCommandHandler.cs
-using MediatR;
-using AutoMapper;
 using Application.Contracts;
+using Application.Exceptions;
 using Application.Responses;
+using AutoMapper;
 using Domain.Models;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using Application.Exceptions;
 
 namespace Application.CQRS.Godowns.Commands.UpdateGodown
 {
@@ -24,7 +24,7 @@ namespace Application.CQRS.Godowns.Commands.UpdateGodown
         public async Task<BaseCommandResponse> Handle(UpdateGodownCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
-            var godownToUpdate = await _godownRepository.GetByIdAsync(request.GodownDto.Id);
+            var godownToUpdate = await _godownRepository.GetByIdAsync(request.GodownDto.Id, cancellationToken);
 
             if (godownToUpdate == null) // Simplified Null check
             {
@@ -34,7 +34,7 @@ namespace Application.CQRS.Godowns.Commands.UpdateGodown
             }
 
             _mapper.Map(request.GodownDto, godownToUpdate);
-            await _godownRepository.UpdateAsync(godownToUpdate);
+            await _godownRepository.UpdateAsync(godownToUpdate, cancellationToken);
 
             response.Success = true;
             response.Message = "Godown Updated Successfully";

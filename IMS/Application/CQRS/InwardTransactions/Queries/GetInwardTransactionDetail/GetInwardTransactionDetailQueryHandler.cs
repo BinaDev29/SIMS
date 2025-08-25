@@ -11,10 +11,10 @@ namespace Application.CQRS.InwardTransactions.Queries.GetInwardTransactionDetail
 {
     public class GetInwardTransactionDetailQueryHandler : IRequestHandler<GetInwardTransactionDetailQuery, InwardTransactionDto>
     {
-        private readonly IGenericRepository<InwardTransaction> _inwardTransactionRepository;
+        private readonly IInwardTransactionRepository _inwardTransactionRepository;
         private readonly IMapper _mapper;
 
-        public GetInwardTransactionDetailQueryHandler(IGenericRepository<InwardTransaction> inwardTransactionRepository, IMapper mapper)
+        public GetInwardTransactionDetailQueryHandler(IInwardTransactionRepository inwardTransactionRepository, IMapper mapper)
         {
             _inwardTransactionRepository = inwardTransactionRepository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Application.CQRS.InwardTransactions.Queries.GetInwardTransactionDetail
 
         public async Task<InwardTransactionDto> Handle(GetInwardTransactionDetailQuery request, CancellationToken cancellationToken)
         {
-            var inwardTransaction = await _inwardTransactionRepository.GetByIdAsync(request.Id);
+            var inwardTransaction = await _inwardTransactionRepository.GetByIdAsync(request.Id, cancellationToken);
             if (inwardTransaction == null)
             {
                 throw new NotFoundException(nameof(InwardTransaction), request.Id);

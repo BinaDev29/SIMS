@@ -1,5 +1,7 @@
-﻿using MediatR;
+﻿// API/Controllers/BaseApiController.cs
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection; // This is a new using statement
 
 namespace API.Controllers
 {

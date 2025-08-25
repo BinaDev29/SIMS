@@ -50,7 +50,6 @@ namespace API.Controllers
             var response = await _mediator.Send(command);
             return Ok(response);
         }
-
         [HttpDelete("{id}")]
         public async Task<ActionResult<BaseCommandResponse>> Delete(int id)
         {

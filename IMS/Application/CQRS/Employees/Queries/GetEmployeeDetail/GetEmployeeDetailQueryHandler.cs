@@ -22,7 +22,7 @@ namespace Application.CQRS.Employees.Queries.GetEmployeeDetail
 
         public async Task<EmployeeDto> Handle(GetEmployeeDetailQuery request, CancellationToken cancellationToken)
         {
-            var employee = await _employeeRepository.GetByIdAsync(request.Id);
+            var employee = await _employeeRepository.GetByIdAsync(request.Id, cancellationToken);
             if (employee == null)
             {
                 throw new NotFoundException(nameof(Employee), request.Id);

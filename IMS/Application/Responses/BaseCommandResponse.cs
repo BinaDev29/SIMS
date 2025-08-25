@@ -8,6 +8,7 @@ namespace Application.Responses
         public int Id { get; set; }
         public bool Success { get; set; } = true;
         public string? Message { get; set; }
-        public List<string> ? ValidationErrors { get; set; }
+        public List<string>? ValidationErrors { get; set; }
+        
     }
 }

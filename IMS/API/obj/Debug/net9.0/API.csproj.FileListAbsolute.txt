@@ -6,6 +6,7 @@ F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.AssemblyInfo.cs
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.csproj.CoreCompileInputs.cache
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cache
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.sourcelink.json
+F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cs
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\appsettings.Development.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\appsettings.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\API.staticwebassets.endpoints.json
@@ -154,7 +155,6 @@ F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Persistence.dll
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Application.pdb
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Persistence.pdb
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\bin\Debug\net9.0\Domain.pdb
-F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cs
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 F:\@INTERNSHIP 2017\INVENTERY\IMS\API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

@@ -11,10 +11,10 @@ namespace Application.CQRS.ReturnTransactions.Queries.GetReturnTransactionDetail
 {
     public class GetReturnTransactionDetailQueryHandler : IRequestHandler<GetReturnTransactionDetailQuery, ReturnTransactionDto>
     {
-        private readonly IGenericRepository<ReturnTransaction> _returnTransactionRepository;
+        private readonly IReturnTransactionRepository _returnTransactionRepository; // Changed to specific repository
         private readonly IMapper _mapper;
 
-        public GetReturnTransactionDetailQueryHandler(IGenericRepository<ReturnTransaction> returnTransactionRepository, IMapper mapper)
+        public GetReturnTransactionDetailQueryHandler(IReturnTransactionRepository returnTransactionRepository, IMapper mapper) // Changed to specific repository
         {
             _returnTransactionRepository = returnTransactionRepository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Application.CQRS.ReturnTransactions.Queries.GetReturnTransactionDetail
 
         public async Task<ReturnTransactionDto> Handle(GetReturnTransactionDetailQuery request, CancellationToken cancellationToken)
         {
-            var returnTransaction = await _returnTransactionRepository.GetByIdAsync(request.Id);
+            var returnTransaction = await _returnTransactionRepository.GetByIdAsync(request.Id, cancellationToken);
             if (returnTransaction == null)
             {
                 throw new NotFoundException(nameof(ReturnTransaction), request.Id);

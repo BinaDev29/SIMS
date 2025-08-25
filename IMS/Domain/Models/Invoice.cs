@@ -11,12 +11,10 @@ namespace Domain.Models
         public required DateTime InvoiceDate { get; set; }
         public required int CustomerId { get; set; }
         public required decimal TotalAmount { get; set; }
-        public string? Status { get; set; } // e.g., "Paid", "Pending"
+        public string? Status { get; set; }
 
-        // Navigation property to the Customer
         public Customer? Customer { get; set; }
 
-        // Navigation property for the items in the invoice
         public ICollection<InvoiceDetail> InvoiceDetails { get; set; } = new List<InvoiceDetail>();
     }
 }

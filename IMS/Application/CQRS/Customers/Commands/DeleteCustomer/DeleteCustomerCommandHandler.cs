@@ -1,10 +1,10 @@
-﻿using MediatR;
-using Application.Contracts;
+﻿using Application.Contracts;
+using Application.Exceptions;
 using Application.Responses;
 using Domain.Models;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using Application.Exceptions;
 
 namespace Application.CQRS.Customers.Commands.DeleteCustomer
 {
@@ -20,7 +20,7 @@ namespace Application.CQRS.Customers.Commands.DeleteCustomer
         public async Task<BaseCommandResponse> Handle(DeleteCustomerCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
-            var customerToDelete = await _customerRepository.GetByIdAsync(request.Id);
+            var customerToDelete = await _customerRepository.GetByIdAsync(request.Id, cancellationToken);
 
             if (customerToDelete == null)
             {
@@ -29,7 +29,8 @@ namespace Application.CQRS.Customers.Commands.DeleteCustomer
                 return response;
             }
 
-            await _customerRepository.DeleteAsync(customerToDelete);
+            // Passing the cancellation token
+            await _customerRepository.DeleteAsync(customerToDelete, cancellationToken);
 
             response.Success = true;
             response.Message = "Customer Deleted Successfully";

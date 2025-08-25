@@ -19,6 +19,8 @@ namespace Application.DTOs.Employees.Validators
             RuleFor(p => p.Password).NotEmpty().WithMessage("{PropertyName} is required.");
             RuleFor(p => p.Email).NotEmpty().WithMessage("{PropertyName} is required.")
                 .EmailAddress().WithMessage("{PropertyName} must be a valid email address.");
+            RuleFor(p => p.Department).NotEmpty().WithMessage("{PropertyName} is required.");
+            RuleFor(p => p.Role).NotEmpty().WithMessage("{PropertyName} is required.");
         }
     }
 }

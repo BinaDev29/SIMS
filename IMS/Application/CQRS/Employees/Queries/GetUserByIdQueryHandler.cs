@@ -1,5 +1,4 @@
-﻿// Application/CQRS/Employees/Queries/GetUserByIdQueryHandler.cs
-using Application.Contracts;
+﻿using Application.Contracts;
 using Application.DTOs.Employees;
 using Application.DTOs.Users;
 using AutoMapper;

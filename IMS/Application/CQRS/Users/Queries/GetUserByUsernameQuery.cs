@@ -1,10 +1,9 @@
-﻿// Application/CQRS/Users/Queries/GetUserByUsernameQuery.cs
-using MediatR;
-using Domain.Models;
+﻿using MediatR;
+using Domain.Models; // Changed to return the full User model
 
-namespace Application.CQRS.Users.Queries
+namespace Application.CQRS.Users.Queries.GetUserByUsername
 {
-    public class GetUserByUsernameQuery : IRequest<Employee>
+    public class GetUserByUsernameQuery : IRequest<User> // Changed the return type to User
     {
         public string Username { get; set; }
 

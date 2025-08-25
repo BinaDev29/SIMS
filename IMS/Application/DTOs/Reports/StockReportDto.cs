@@ -1,10 +1,10 @@
 ﻿namespace Application.DTOs.Reports
 {
-    public class StockReportDto // << This must be 'public'
+    public class StockReportDto
     {
-        public int ItemId { get; set; }
-        public string ItemName { get; set; }
-        public int StockQuantity { get; set; }
-        public int GodownId { get; set; }
+        public required int ItemId { get; set; }
+        public required string ItemName { get; set; }
+        public required int StockQuantity { get; set; }
+        public required int GodownId { get; set; }
     }
 }

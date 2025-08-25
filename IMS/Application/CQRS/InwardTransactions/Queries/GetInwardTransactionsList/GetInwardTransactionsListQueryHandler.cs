@@ -11,10 +11,10 @@ namespace Application.CQRS.InwardTransactions.Queries.GetInwardTransactionsList
 {
     public class GetInwardTransactionsListQueryHandler : IRequestHandler<GetInwardTransactionsListQuery, IReadOnlyList<InwardTransactionDto>>
     {
-        private readonly IGenericRepository<InwardTransaction> _inwardTransactionRepository;
+        private readonly IInwardTransactionRepository _inwardTransactionRepository;
         private readonly IMapper _mapper;
 
-        public GetInwardTransactionsListQueryHandler(IGenericRepository<InwardTransaction> inwardTransactionRepository, IMapper mapper)
+        public GetInwardTransactionsListQueryHandler(IInwardTransactionRepository inwardTransactionRepository, IMapper mapper)
         {
             _inwardTransactionRepository = inwardTransactionRepository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Application.CQRS.InwardTransactions.Queries.GetInwardTransactionsList
 
         public async Task<IReadOnlyList<InwardTransactionDto>> Handle(GetInwardTransactionsListQuery request, CancellationToken cancellationToken)
         {
-            var inwardTransactions = await _inwardTransactionRepository.GetAllAsync();
+            var inwardTransactions = await _inwardTransactionRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<InwardTransactionDto>>(inwardTransactions);
         }
     }

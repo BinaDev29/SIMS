@@ -1,7 +1,5 @@
-﻿// Application/CQRS/Employees/Commands/CreateEmployee/CreateEmployeeCommandHandler.cs
-using Application.Contracts;
+﻿using Application.Contracts;
 using Application.DTOs.Employees.Validators;
-using Application.DTOs.Users;
 using Application.Responses;
 using AutoMapper;
 using BCrypt.Net;
@@ -15,10 +13,11 @@ namespace Application.CQRS.Employees.Commands.CreateEmployee
 {
     public class CreateEmployeeCommandHandler : IRequestHandler<CreateEmployeeCommand, BaseCommandResponse>
     {
-        private readonly IGenericRepository<Employee> _employeeRepository;
+        // Changed to IEmployeeRepository
+        private readonly IEmployeeRepository _employeeRepository;
         private readonly IMapper _mapper;
 
-        public CreateEmployeeCommandHandler(IGenericRepository<Employee> employeeRepository, IMapper mapper)
+        public CreateEmployeeCommandHandler(IEmployeeRepository employeeRepository, IMapper mapper)
         {
             _employeeRepository = employeeRepository;
             _mapper = mapper;
@@ -28,7 +27,6 @@ namespace Application.CQRS.Employees.Commands.CreateEmployee
         {
             var response = new BaseCommandResponse();
 
-            // Pass the cancellationToken to ValidateAsync
             var validator = new CreateEmployeeDtoValidator();
             var validationResult = await validator.ValidateAsync(request.EmployeeDto, cancellationToken);
 
@@ -39,14 +37,24 @@ namespace Application.CQRS.Employees.Commands.CreateEmployee
                 return response;
             }
 
+            // Check if username already exists using the specific repository method
+            var existingUser = await _employeeRepository.GetByUsername(request.EmployeeDto.Username);
+            if (existingUser != null)
+            {
+                response.Success = false;
+                response.Message = "Username already exists.";
+                return response;
+            }
+
             var employee = _mapper.Map<Employee>(request.EmployeeDto);
             employee.Password = BCrypt.Net.BCrypt.HashPassword(request.EmployeeDto.Password);
 
-            await _employeeRepository.AddAsync(employee);
+            // Passing the cancellation token
+            var createdEmployee = await _employeeRepository.AddAsync(employee, cancellationToken);
 
             response.Success = true;
             response.Message = "Employee Created Successfully";
-            response.Id = employee.Id;
+            response.Id = createdEmployee.Id;
 
             return response;
         }

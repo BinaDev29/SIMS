@@ -11,10 +11,10 @@ namespace Application.CQRS.Supplier.Queries.GetSuppliersList
 {
     public class GetSuppliersListQueryHandler : IRequestHandler<GetSuppliersListQuery, IReadOnlyList<SupplierDto>>
     {
-        private readonly IGenericRepository<Domain.Models.Supplier> _supplierRepository;
+        private readonly ISupplierRepository _supplierRepository; // Changed to specific repository
         private readonly IMapper _mapper;
 
-        public GetSuppliersListQueryHandler(IGenericRepository<Domain.Models.Supplier> supplierRepository, IMapper mapper)
+        public GetSuppliersListQueryHandler(ISupplierRepository supplierRepository, IMapper mapper) // Changed to specific repository
         {
             _supplierRepository = supplierRepository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Application.CQRS.Supplier.Queries.GetSuppliersList
 
         public async Task<IReadOnlyList<SupplierDto>> Handle(GetSuppliersListQuery request, CancellationToken cancellationToken)
         {
-            var suppliers = await _supplierRepository.GetAllAsync();
+            var suppliers = await _supplierRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<SupplierDto>>(suppliers);
         }
     }

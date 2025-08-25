@@ -22,7 +22,7 @@ namespace Application.CQRS.Customers.Queries.GetCustomerDetail
 
         public async Task<CustomerDto> Handle(GetCustomerDetailQuery request, CancellationToken cancellationToken)
         {
-            var customer = await _customerRepository.GetByIdAsync(request.Id);
+            var customer = await _customerRepository.GetByIdAsync(request.Id, cancellationToken);
             if (customer == null)
             {
                 throw new NotFoundException(nameof(Customer), request.Id);

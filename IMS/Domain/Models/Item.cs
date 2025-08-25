@@ -11,8 +11,8 @@ namespace Domain.Models
         public required int StockQuantity { get; set; }
         public required int GodownId { get; set; }
 
-        public string? Description { get; set; } // Added
-        public decimal? UnitPrice { get; set; } // Added
+        public string? Description { get; set; }
+        public decimal? UnitPrice { get; set; }
         public string? Type { get; set; }
         public DateTime? ManufacturingDate { get; set; }
         public DateTime? ExpiryDate { get; set; }

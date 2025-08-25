@@ -1,8 +1,8 @@
-﻿using MediatR;
-using AutoMapper;
-using Application.Contracts;
+﻿using Application.Contracts;
 using Application.Responses;
+using AutoMapper;
 using Domain.Models;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -24,10 +24,12 @@ namespace Application.CQRS.Customers.Commands.CreateCustomer
             var response = new BaseCommandResponse();
             var customer = _mapper.Map<Customer>(request.CustomerDto);
 
-            await _customerRepository.AddAsync(customer);
+            // Passing the cancellation token
+            var createdCustomer = await _customerRepository.AddAsync(customer, cancellationToken);
 
             response.Success = true;
             response.Message = "Customer Created Successfully";
+            response.Id = createdCustomer.Id; // Returning the ID of the new customer
 
             return response;
         }

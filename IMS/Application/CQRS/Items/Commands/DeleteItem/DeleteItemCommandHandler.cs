@@ -1,14 +1,14 @@
-﻿using MediatR;
-using Application.Contracts;
-using Application.Responses; // Changed to Responses
+﻿using Application.Contracts;
 using Application.Exceptions;
+using Application.Responses;
 using Domain.Models;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Application.CQRS.Items.Commands.DeleteItem
 {
-    public class DeleteItemCommandHandler : IRequestHandler<DeleteItemCommand, BaseCommandResponse> // Changed to BaseCommandResponse
+    public class DeleteItemCommandHandler : IRequestHandler<DeleteItemCommand, BaseCommandResponse>
     {
         private readonly IGenericRepository<Item> _itemRepository;
 
@@ -17,10 +17,10 @@ namespace Application.CQRS.Items.Commands.DeleteItem
             _itemRepository = itemRepository;
         }
 
-        public async Task<BaseCommandResponse> Handle(DeleteItemCommand request, CancellationToken cancellationToken) // Changed to BaseCommandResponse
+        public async Task<BaseCommandResponse> Handle(DeleteItemCommand request, CancellationToken cancellationToken)
         {
-            var response = new BaseCommandResponse(); // Changed to BaseCommandResponse
-            var itemToDelete = await _itemRepository.GetByIdAsync(request.Id);
+            var response = new BaseCommandResponse();
+            var itemToDelete = await _itemRepository.GetByIdAsync(request.Id, cancellationToken);
 
             if (itemToDelete == null)
             {
@@ -29,7 +29,7 @@ namespace Application.CQRS.Items.Commands.DeleteItem
                 return response;
             }
 
-            await _itemRepository.DeleteAsync(itemToDelete);
+            await _itemRepository.DeleteAsync(itemToDelete, cancellationToken);
 
             response.Success = true;
             response.Message = "Item Deleted Successfully";

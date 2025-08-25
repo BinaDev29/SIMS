@@ -796,6 +796,32 @@
     ]
   },
   {
+    "ContainingType": "API.Controllers.RegisterController",
+    "Method": "Register",
+    "RelativePath": "api/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Application.DTOs.Users.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Responses.BaseCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "API.Controllers.ReportController",
     "Method": "GetGodownReport",
     "RelativePath": "api/Report/godown",

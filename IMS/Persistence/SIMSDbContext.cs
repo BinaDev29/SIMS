@@ -1,13 +1,7 @@
-﻿using Domain.Common;
+﻿// Persistence/SIMSDbContext.cs
+using Domain.Common;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Threading;
-using System.Threading.Tasks;
-
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Persistence
 {
@@ -17,6 +11,8 @@ namespace Persistence
         {
         }
 
+        // Added the Users DbSet
+        public DbSet<User> Users { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Godown> Godowns { get; set; }
         public DbSet<Item> Items { get; set; }

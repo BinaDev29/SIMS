@@ -22,7 +22,7 @@ namespace Application.CQRS.Items.Queries.GetItemsList
 
         public async Task<IReadOnlyList<ItemDto>> Handle(GetItemsListQuery request, CancellationToken cancellationToken)
         {
-            var items = await _itemRepository.GetAllAsync();
+            var items = await _itemRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<ItemDto>>(items);
         }
     }

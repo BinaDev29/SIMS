@@ -10,7 +10,6 @@ namespace Domain.Models
         public required int Quantity { get; set; }
         public required decimal UnitPrice { get; set; }
 
-        // Navigation properties
         public Invoice? Invoice { get; set; }
         public Item? Item { get; set; }
     }

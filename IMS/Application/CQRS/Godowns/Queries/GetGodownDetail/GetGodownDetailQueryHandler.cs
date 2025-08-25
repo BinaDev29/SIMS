@@ -22,7 +22,7 @@ namespace Application.CQRS.Godowns.Queries.GetGodownDetail
 
         public async Task<GodownDto> Handle(GetGodownDetailQuery request, CancellationToken cancellationToken)
         {
-            var godown = await _godownRepository.GetByIdAsync(request.Id);
+            var godown = await _godownRepository.GetByIdAsync(request.Id, cancellationToken);
             if (godown == null)
             {
                 throw new NotFoundException(nameof(Godown), request.Id);

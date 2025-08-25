@@ -1,12 +1,12 @@
-﻿using AutoMapper;
-using MediatR;
-using Application.Contracts;
+﻿using Application.Contracts;
+using Application.DTOs.InwardTransactions.Validators;
 using Application.Responses;
+using AutoMapper;
 using Domain.Models;
-using System.Threading.Tasks;
+using MediatR;
+using System.Linq;
 using System.Threading;
-using Application.DTOs.InwardTransactions.Validators; // New using
-using System.Linq; // New using
+using System.Threading.Tasks;
 
 namespace Application.CQRS.InwardTransactions.Commands.CreateInwardTransaction
 {
@@ -41,7 +41,7 @@ namespace Application.CQRS.InwardTransactions.Commands.CreateInwardTransaction
             var inwardTransaction = _mapper.Map<InwardTransaction>(request.InwardTransactionDto);
 
             var itemToUpdate = await _itemRepository.GetByIdAsync(request.InwardTransactionDto.ItemId, cancellationToken);
-           
+
 
             if (itemToUpdate == null)
             {

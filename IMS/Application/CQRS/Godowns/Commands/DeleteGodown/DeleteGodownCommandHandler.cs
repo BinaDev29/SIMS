@@ -1,16 +1,15 @@
-﻿using System;
+﻿using Application.Contracts;
+using Application.Exceptions;
+using Application.Responses;
+using Domain.Models;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-
-using MediatR;
-using Application.Contracts;
-using Application.Responses;
-using Domain.Models;
 using System.Threading;
 using System.Threading.Tasks;
-using Application.Exceptions;
+using System.Threading.Tasks;
 
 namespace Application.CQRS.Godowns.Commands.DeleteGodown
 {
@@ -26,7 +25,8 @@ namespace Application.CQRS.Godowns.Commands.DeleteGodown
         public async Task<BaseCommandResponse> Handle(DeleteGodownCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
-            var godownToDelete = await _godownRepository.GetByIdAsync(request.Id);
+            // Passing the cancellation token
+            var godownToDelete = await _godownRepository.GetByIdAsync(request.Id, cancellationToken);
 
             if (godownToDelete == null)
             {
@@ -35,7 +35,8 @@ namespace Application.CQRS.Godowns.Commands.DeleteGodown
                 return response;
             }
 
-            await _godownRepository.DeleteAsync(godownToDelete);
+            // Passing the cancellation token
+            await _godownRepository.DeleteAsync(godownToDelete, cancellationToken);
 
             response.Success = true;
             response.Message = "Godown Deleted Successfully";

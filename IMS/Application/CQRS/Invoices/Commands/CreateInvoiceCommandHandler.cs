@@ -1,13 +1,13 @@
-﻿using AutoMapper;
-using MediatR;
-using Application.Contracts;
-using Application.Responses;
-using Domain.Models;
-using System.Threading.Tasks;
-using System.Threading;
+﻿using Application.Contracts;
 using Application.DTOs.Invoices.Validators;
-using System.Linq;
+using Application.Responses;
+using AutoMapper;
+using Domain.Models;
+using MediatR;
 using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Application.CQRS.Invoices.Commands
 {
@@ -71,7 +71,7 @@ namespace Application.CQRS.Invoices.Commands
 
             response.Success = true;
             response.Message = "Invoice Created Successfully";
-            response.Id = invoice.Id;
+            response.Id = invoice.Id; // The ID is now correctly assigned to the response.
 
             return response;
         }

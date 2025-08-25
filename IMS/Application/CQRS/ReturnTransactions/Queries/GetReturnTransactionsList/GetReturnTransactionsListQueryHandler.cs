@@ -11,10 +11,10 @@ namespace Application.CQRS.ReturnTransactions.Queries.GetReturnTransactionsList
 {
     public class GetReturnTransactionsListQueryHandler : IRequestHandler<GetReturnTransactionsListQuery, IReadOnlyList<ReturnTransactionDto>>
     {
-        private readonly IGenericRepository<ReturnTransaction> _returnTransactionRepository;
+        private readonly IReturnTransactionRepository _returnTransactionRepository; // Changed to specific repository
         private readonly IMapper _mapper;
 
-        public GetReturnTransactionsListQueryHandler(IGenericRepository<ReturnTransaction> returnTransactionRepository, IMapper mapper)
+        public GetReturnTransactionsListQueryHandler(IReturnTransactionRepository returnTransactionRepository, IMapper mapper) // Changed to specific repository
         {
             _returnTransactionRepository = returnTransactionRepository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Application.CQRS.ReturnTransactions.Queries.GetReturnTransactionsList
 
         public async Task<IReadOnlyList<ReturnTransactionDto>> Handle(GetReturnTransactionsListQuery request, CancellationToken cancellationToken)
         {
-            var returnTransactions = await _returnTransactionRepository.GetAllAsync();
+            var returnTransactions = await _returnTransactionRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<ReturnTransactionDto>>(returnTransactions);
         }
     }

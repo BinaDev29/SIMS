@@ -1,5 +1,4 @@
-﻿// Application/CQRS/Users/Queries/GetUsersListQueryHandler.cs
-using AutoMapper;
+﻿using AutoMapper;
 using MediatR;
 using Application.Contracts;
 using Application.DTOs.Users;
@@ -8,22 +7,22 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Application.CQRS.Users.Queries
+namespace Application.CQRS.Users.Queries.GetUsersList
 {
     public class GetUsersListQueryHandler : IRequestHandler<GetUsersListQuery, IReadOnlyList<UserListDto>>
     {
-        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IUserRepository _userRepository; // Changed to IUserRepository
         private readonly IMapper _mapper;
 
-        public GetUsersListQueryHandler(IEmployeeRepository employeeRepository, IMapper mapper)
+        public GetUsersListQueryHandler(IUserRepository userRepository, IMapper mapper) // Changed to IUserRepository
         {
-            _employeeRepository = employeeRepository;
+            _userRepository = userRepository;
             _mapper = mapper;
         }
 
         public async Task<IReadOnlyList<UserListDto>> Handle(GetUsersListQuery request, CancellationToken cancellationToken)
         {
-            var users = await _employeeRepository.GetAllAsync();
+            var users = await _userRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<UserListDto>>(users);
         }
     }

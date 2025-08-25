@@ -1,11 +1,11 @@
-﻿using MediatR;
-using AutoMapper;
-using Application.Contracts;
+﻿using Application.Contracts;
+using Application.Exceptions;
 using Application.Responses;
+using AutoMapper;
 using Domain.Models;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using Application.Exceptions;
 
 namespace Application.CQRS.Customers.Commands.UpdateCustomer
 {
@@ -23,7 +23,7 @@ namespace Application.CQRS.Customers.Commands.UpdateCustomer
         public async Task<BaseCommandResponse> Handle(UpdateCustomerCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
-            var customerToUpdate = await _customerRepository.GetByIdAsync(request.CustomerDto.Id);
+            var customerToUpdate = await _customerRepository.GetByIdAsync(request.CustomerDto.Id, cancellationToken);
 
             if (customerToUpdate == null)
             {
@@ -33,7 +33,9 @@ namespace Application.CQRS.Customers.Commands.UpdateCustomer
             }
 
             _mapper.Map(request.CustomerDto, customerToUpdate);
-            await _customerRepository.UpdateAsync(customerToUpdate);
+
+            // Passing the cancellation token
+            await _customerRepository.UpdateAsync(customerToUpdate, cancellationToken);
 
             response.Success = true;
             response.Message = "Customer Updated Successfully";

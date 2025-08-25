@@ -1,29 +1,31 @@
-﻿using MediatR;
-using AutoMapper;
-using Application.Contracts;
+﻿using Application.Contracts;
+using Application.Exceptions;
 using Application.Responses;
+using AutoMapper;
 using Domain.Models;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using Application.Exceptions;
 
 namespace Application.CQRS.InwardTransactions.Commands.UpdateInwardTransaction
 {
     public class UpdateInwardTransactionCommandHandler : IRequestHandler<UpdateInwardTransactionCommand, BaseCommandResponse>
     {
-        private readonly IGenericRepository<InwardTransaction> _inwardTransactionRepository;
+        private readonly IInwardTransactionRepository _inwardTransactionRepository;
+        private readonly IItemRepository _itemRepository;
         private readonly IMapper _mapper;
 
-        public UpdateInwardTransactionCommandHandler(IGenericRepository<InwardTransaction> inwardTransactionRepository, IMapper mapper)
+        public UpdateInwardTransactionCommandHandler(IInwardTransactionRepository inwardTransactionRepository, IItemRepository itemRepository, IMapper mapper)
         {
             _inwardTransactionRepository = inwardTransactionRepository;
+            _itemRepository = itemRepository;
             _mapper = mapper;
         }
 
         public async Task<BaseCommandResponse> Handle(UpdateInwardTransactionCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
-            var inwardTransactionToUpdate = await _inwardTransactionRepository.GetByIdAsync(request.InwardTransactionDto.Id);
+            var inwardTransactionToUpdate = await _inwardTransactionRepository.GetByIdAsync(request.InwardTransactionDto.Id, cancellationToken);
 
             if (inwardTransactionToUpdate == null)
             {
@@ -32,8 +34,20 @@ namespace Application.CQRS.InwardTransactions.Commands.UpdateInwardTransaction
                 return response;
             }
 
+            var oldQuantity = inwardTransactionToUpdate.QuantityReceived;
+
             _mapper.Map(request.InwardTransactionDto, inwardTransactionToUpdate);
-            await _inwardTransactionRepository.UpdateAsync(inwardTransactionToUpdate);
+
+            // Adjust stock quantity
+            var itemToUpdate = await _itemRepository.GetByIdAsync(inwardTransactionToUpdate.ItemId, cancellationToken);
+            if (itemToUpdate != null)
+            {
+                var newQuantity = inwardTransactionToUpdate.QuantityReceived;
+                itemToUpdate.StockQuantity += (newQuantity - oldQuantity);
+                await _itemRepository.UpdateAsync(itemToUpdate, cancellationToken);
+            }
+
+            await _inwardTransactionRepository.UpdateAsync(inwardTransactionToUpdate, cancellationToken);
 
             response.Success = true;
             response.Message = "Inward Transaction Updated Successfully";

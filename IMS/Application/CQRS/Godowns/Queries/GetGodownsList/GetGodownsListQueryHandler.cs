@@ -22,7 +22,7 @@ namespace Application.CQRS.Godowns.Queries.GetGodownsList
 
         public async Task<IReadOnlyList<GodownDto>> Handle(GetGodownsListQuery request, CancellationToken cancellationToken)
         {
-            var godowns = await _godownRepository.GetAllAsync();
+            var godowns = await _godownRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<GodownDto>>(godowns);
         }
     }

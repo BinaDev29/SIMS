@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using FluentValidation;
+﻿using FluentValidation;
 using Application.DTOs.Items;
 
 namespace Application.DTOs.Items.Validators
@@ -14,20 +8,23 @@ namespace Application.DTOs.Items.Validators
         public UpdateItemDtoValidator()
         {
             RuleFor(p => p.Id)
-                .NotNull()
-                .NotEmpty().WithMessage("{PropertyName} is required.");
+                .GreaterThan(0).WithMessage("{PropertyName} must be a positive value.");
 
             RuleFor(p => p.ItemName)
                 .NotEmpty().WithMessage("{PropertyName} is required.")
-                .NotNull()
                 .MaximumLength(100).WithMessage("{PropertyName} must not exceed 100 characters.");
 
-            RuleFor(p => p.Description)
-                .MaximumLength(500).WithMessage("{PropertyName} must not exceed 500 characters.");
-
-            RuleFor(p => p.UnitPrice)
+            RuleFor(p => p.StockQuantity)
                 .NotEmpty().WithMessage("{PropertyName} is required.")
                 .GreaterThanOrEqualTo(0).WithMessage("{PropertyName} must be a non-negative value.");
+
+            RuleFor(p => p.GodownId)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .GreaterThan(0).WithMessage("{PropertyName} must be greater than zero.");
+
+            RuleFor(p => p.UnitPrice)
+                .NotNull().When(p => p.UnitPrice.HasValue)
+                .GreaterThanOrEqualTo(0).When(p => p.UnitPrice.HasValue).WithMessage("{PropertyName} must be a non-negative value.");
         }
     }
 }

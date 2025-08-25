@@ -1349,6 +1349,54 @@
         }
       }
     },
+    "/api/Register": {
+      "post": {
+        "tags": [
+          "Register"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseCommandResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseCommandResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseCommandResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Report/stock": {
       "get": {
         "tags": [
@@ -2104,6 +2152,15 @@
         "additionalProperties": false
       },
       "CreateInwardTransactionDto": {
+        "required": [
+          "employeeId",
+          "godownId",
+          "itemId",
+          "quantity",
+          "supplierId",
+          "transactionDate",
+          "unitPrice"
+        ],
         "type": "object",
         "properties": {
           "itemId": {
@@ -2412,6 +2469,11 @@
         "additionalProperties": false
       },
       "GodownReportDto": {
+        "required": [
+          "godownName",
+          "id",
+          "numberOfItems"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2581,6 +2643,24 @@
         },
         "additionalProperties": false
       },
+      "RegisterDto": {
+        "required": [
+          "password",
+          "username"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ReturnTransactionDto": {
         "required": [
           "customerId",
@@ -2630,6 +2710,12 @@
         "additionalProperties": false
       },
       "StockReportDto": {
+        "required": [
+          "godownId",
+          "itemId",
+          "itemName",
+          "stockQuantity"
+        ],
         "type": "object",
         "properties": {
           "itemId": {
@@ -2900,12 +2986,14 @@
       "UpdateOutwardTransactionDto": {
         "required": [
           "customerId",
+          "destination",
           "employeeId",
           "godownId",
           "id",
+          "invoiceNumber",
           "itemId",
-          "quantity",
-          "transactionDate",
+          "outwardDate",
+          "quantityDelivered",
           "unitPrice"
         ],
         "type": "object",
@@ -2926,19 +3014,27 @@
             "type": "integer",
             "format": "int32"
           },
-          "quantity": {
+          "employeeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantityDelivered": {
             "type": "integer",
             "format": "int32"
           },
           "unitPrice": {
-            "type": "number",
-            "format": "double"
+            "type": "integer",
+            "format": "int32"
           },
-          "transactionDate": {
+          "outwardDate": {
             "type": "string",
             "format": "date-time"
           },
-          "employeeId": {
+          "destination": {
+            "type": "string",
+            "nullable": true
+          },
+          "invoiceNumber": {
             "type": "string",
             "nullable": true
           }

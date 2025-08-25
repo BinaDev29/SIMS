@@ -1,24 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// API/Controllers/LoginController.cs
+using Microsoft.AspNetCore.Mvc;
 using API.Auth;
 using Application.DTOs.Users;
 using Application.Responses;
 using MediatR;
-using Application.CQRS.Users.Queries;
+using Application.CQRS.Users.Queries.GetUserByUsername;
 using System.Threading.Tasks;
 using BCrypt.Net;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class LoginController : ControllerBase
+    // ከ ControllerBase ይልቅ BaseApiController እንዲወርስ አድርግ
+    // [ApiController] እና [Route] attributeን አጥፋ ምክንያቱም BaseApiController ቀድሞውንም አለው
+    public class LoginController : BaseApiController
     {
-        private readonly IMediator _mediator;
         private readonly JwtTokenGenerator _tokenGenerator;
 
-        public LoginController(IMediator mediator, JwtTokenGenerator tokenGenerator)
+        // Mediator የሚለውን ንብረት ከ BaseApiController ስለምትወርስ እዚህ አያስፈልግም
+        public LoginController(JwtTokenGenerator tokenGenerator)
         {
-            _mediator = mediator;
             _tokenGenerator = tokenGenerator;
         }
 
@@ -27,7 +27,7 @@ namespace API.Controllers
         {
             var response = new BaseCommandResponse();
 
-            var user = await _mediator.Send(new GetUserByUsernameQuery(loginDto.Username));
+            var user = await Mediator.Send(new GetUserByUsernameQuery(loginDto.Username));
 
             // Verify the entered password against the hashed password in the database
             if (user != null && BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))

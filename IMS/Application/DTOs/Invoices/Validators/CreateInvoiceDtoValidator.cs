@@ -24,9 +24,14 @@ namespace Application.DTOs.Invoices.Validators
         public CreateInvoiceDetailDtoValidator()
         {
             RuleFor(p => p.ItemId)
-                .NotEmpty().WithMessage("{PropertyName} is required.");
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .NotNull();
 
             RuleFor(p => p.Quantity)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .GreaterThan(0).WithMessage("{PropertyName} must be greater than zero.");
+
+            RuleFor(p => p.UnitPrice)
                 .NotEmpty().WithMessage("{PropertyName} is required.")
                 .GreaterThan(0).WithMessage("{PropertyName} must be greater than zero.");
         }

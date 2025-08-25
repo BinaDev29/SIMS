@@ -1,10 +1,12 @@
-﻿using AutoMapper;
-using MediatR;
+﻿using Application.Responses; // Namespace corrected
 using Application.Contracts;
-using Application.Responses;
+using Application.DTOs.ReturnTransactions.Validators; // New using for validation
+using AutoMapper;
 using Domain.Models;
-using System.Threading.Tasks;
+using MediatR;
+using System.Linq; // New using for validation
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Application.CQRS.ReturnTransactions.Commands.CreateReturnTransaction
 {
@@ -24,10 +26,22 @@ namespace Application.CQRS.ReturnTransactions.Commands.CreateReturnTransaction
         public async Task<BaseCommandResponse> Handle(CreateReturnTransactionCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
+
+            // Add validation
+            var validator = new CreateReturnTransactionDtoValidator();
+            var validationResult = await validator.ValidateAsync(request.ReturnTransactionDto, cancellationToken);
+
+            if (validationResult.IsValid == false)
+            {
+                response.Success = false;
+                response.ValidationErrors = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
+                return response;
+            }
+
             var returnTransaction = _mapper.Map<ReturnTransaction>(request.ReturnTransactionDto);
 
             // የእቃውን stock መጠን ለመጨመር ኮዱን እንጨምራለን።
-            var itemToUpdate = await _itemRepository.GetByIdAsync(request.ReturnTransactionDto.ItemId);
+            var itemToUpdate = await _itemRepository.GetByIdAsync(request.ReturnTransactionDto.ItemId, cancellationToken);
 
             if (itemToUpdate == null)
             {
@@ -39,8 +53,8 @@ namespace Application.CQRS.ReturnTransactions.Commands.CreateReturnTransaction
             // የstock መጠኑን ይጨምራል።
             itemToUpdate.StockQuantity += request.ReturnTransactionDto.Quantity;
 
-            await _returnTransactionRepository.AddAsync(returnTransaction);
-            await _itemRepository.UpdateAsync(itemToUpdate);
+            await _returnTransactionRepository.AddAsync(returnTransaction, cancellationToken);
+            await _itemRepository.UpdateAsync(itemToUpdate, cancellationToken);
 
             response.Success = true;
             response.Message = "Return Transaction and Item Stock Updated Successfully";

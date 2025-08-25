@@ -12,18 +12,14 @@ namespace API.Controllers
 {
     public class CustomerController : BaseApiController
     {
-        private readonly IMediator _mediator;
-
-        public CustomerController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+        // IMediatorን ከ BaseApiController ስለምትወርስ constructorም ሆነ የ _mediator ንብረቱን እንደገና መግለጽ አያስፈልግም
+        // በቀጥታ _mediatorን መጠቀም ትችላለህ።
 
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<CustomerDto>>> Get()
         {
             var query = new GetCustomersListQuery();
-            var customers = await _mediator.Send(query);
+            var customers = await Mediator.Send(query);
             return Ok(customers);
         }
 
@@ -31,7 +27,7 @@ namespace API.Controllers
         public async Task<ActionResult<CustomerDto>> Get(int id)
         {
             var query = new GetCustomerDetailQuery { Id = id };
-            var customer = await _mediator.Send(query);
+            var customer = await Mediator.Send(query);
             return Ok(customer);
         }
 
@@ -39,23 +35,33 @@ namespace API.Controllers
         public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateCustomerDto createCustomerDto)
         {
             var command = new CreateCustomerCommand { CustomerDto = createCustomerDto };
-            var response = await _mediator.Send(command);
-            return Ok(response);
+            var response = await Mediator.Send(command);
+
+            if (response.Success)
+            {
+                return Ok(response);
+            }
+            return BadRequest(response);
         }
 
         [HttpPut]
         public async Task<ActionResult<BaseCommandResponse>> Put([FromBody] UpdateCustomerDto updateCustomerDto)
         {
             var command = new UpdateCustomerCommand { CustomerDto = updateCustomerDto };
-            var response = await _mediator.Send(command);
-            return Ok(response);
+            var response = await Mediator.Send(command);
+
+            if (response.Success)
+            {
+                return Ok(response);
+            }
+            return BadRequest(response);
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<BaseCommandResponse>> Delete(int id)
         {
             var command = new DeleteCustomerCommand { Id = id };
-            var response = await _mediator.Send(command);
+            var response = await Mediator.Send(command);
             return Ok(response);
         }
     }

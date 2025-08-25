@@ -22,7 +22,7 @@ namespace Application.CQRS.Items.Queries.GetItemDetail
 
         public async Task<ItemDto> Handle(GetItemDetailQuery request, CancellationToken cancellationToken)
         {
-            var item = await _itemRepository.GetByIdAsync(request.Id);
+            var item = await _itemRepository.GetByIdAsync(request.Id, cancellationToken);
             if (item == null)
             {
                 throw new NotFoundException(nameof(Item), request.Id);

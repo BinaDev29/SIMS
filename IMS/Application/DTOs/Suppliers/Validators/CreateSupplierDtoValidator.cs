@@ -18,6 +18,7 @@ namespace Application.DTOs.Suppliers.Validators
             RuleFor(p => p.PhoneNumber).NotEmpty().WithMessage("{PropertyName} is required.");
             RuleFor(p => p.Email).NotEmpty().WithMessage("{PropertyName} is required.")
                 .EmailAddress().WithMessage("{PropertyName} must be a valid email address.");
+            RuleFor(p => p.Address).NotEmpty().WithMessage("{PropertyName} is required.");
         }
     }
 }

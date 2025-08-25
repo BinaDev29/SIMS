@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentValidation;
+using Application.DTOs.Godowns;
 
 namespace Application.DTOs.Godowns.Validators
 {
-    internal class CreateGodownDtoValidator
+    public class CreateGodownDtoValidator : AbstractValidator<CreateGodownDto>
     {
+        public CreateGodownDtoValidator()
+        {
+            RuleFor(p => p.GodownName)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .MaximumLength(50).WithMessage("{PropertyName} must not exceed 50 characters.");
+
+            RuleFor(p => p.Location)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .MaximumLength(100).WithMessage("{PropertyName} must not exceed 100 characters.");
+
+            RuleFor(p => p.GodownManager)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .MaximumLength(50).WithMessage("{PropertyName} must not exceed 50 characters.");
+        }
     }
 }

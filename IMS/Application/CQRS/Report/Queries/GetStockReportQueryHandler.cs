@@ -22,7 +22,7 @@ namespace Application.CQRS.Report.Queries
 
         public async Task<IReadOnlyList<StockReportDto>> Handle(GetStockReportQuery request, CancellationToken cancellationToken)
         {
-            var items = await _itemRepository.GetAllAsync();
+            var items = await _itemRepository.GetAllAsync(cancellationToken);
             return _mapper.Map<IReadOnlyList<StockReportDto>>(items);
         }
     }

@@ -2,8 +2,8 @@
 {
     public class GodownReportDto
     {
-        public int Id { get; set; }
-        public string GodownName { get; set; }
-        public int NumberOfItems { get; set; }
+        public required int Id { get; set; }
+        public required string GodownName { get; set; }
+        public required int NumberOfItems { get; set; }
     }
 }
