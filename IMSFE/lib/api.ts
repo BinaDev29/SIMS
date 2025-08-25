@@ -187,25 +187,25 @@ export const handleApiError = (error: unknown): string => {
 export const useApiCall = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string>("")
-  \
-  const execute = async <T>(apiCall: () => Promise<ApiResponse<T>>)
-  : Promise<T | null> =>
-  setIsLoading(true)
-  setError("")
+  
+  const execute = async <T>(apiCall: () => Promise<ApiResponse<T>>): Promise<T | null> => {
+    setIsLoading(true)
+    setError("")
 
-  try {
-    const response = await apiCall()
-    if (response.success) {
-      return response.data || null
-    } else {
-      setError(response.message)
+    try {
+      const response = await apiCall()
+      if (response.success) {
+        return response.data || null
+      } else {
+        setError(response.message)
+        return null
+      }
+    } catch (error) {
+      setError(handleApiError(error))
       return null
+    } finally {
+      setIsLoading(false)
     }
-  } catch (error) {
-    setError(handleApiError(error))
-    return null
-  } finally {
-    setIsLoading(false)
   }
 
   return { execute, isLoading, error, setError }

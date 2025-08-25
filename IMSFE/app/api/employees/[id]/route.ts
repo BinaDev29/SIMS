@@ -1,12 +1,19 @@
 import { NextResponse } from "next/server"
 import { AuthService } from "@/lib/auth"
 
-const BACKEND_URL = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/Employee`
+const getBackendUrl = () => process.env.NEXT_PUBLIC_BACKEND_URL || ""
 
 export async function GET(request: Request, { params }: { params: { id: string } }) {
   const { id } = params
   try {
-    const response = await fetch(`${BACKEND_URL}/${id}`, {
+    const baseUrl = getBackendUrl()
+    if (!baseUrl) {
+      return NextResponse.json(
+        { success: false, message: "Backend URL is not configured." },
+        { status: 500 }
+      )
+    }
+    const response = await fetch(`${baseUrl}/api/Employee/${id}`, {
       headers: AuthService.getAuthHeaders(),
       cache: "no-store",
     })
@@ -32,7 +39,14 @@ export async function PUT(request: Request, { params }: { params: { id: string }
   try {
     const payload = await request.json()
 
-    const response = await fetch(`${BACKEND_URL}/${id}`, {
+    const baseUrl = getBackendUrl()
+    if (!baseUrl) {
+      return NextResponse.json(
+        { success: false, message: "Backend URL is not configured." },
+        { status: 500 }
+      )
+    }
+    const response = await fetch(`${baseUrl}/api/Employee/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

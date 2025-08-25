@@ -2,7 +2,11 @@ import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/Customer/stats`)
+    const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL
+    if (!baseUrl) {
+      return NextResponse.json({ success: false, message: "Backend URL is not configured." }, { status: 500 })
+    }
+    const response = await fetch(`${baseUrl}/api/Customer/stats`)
 
     if (!response.ok) {
       return NextResponse.json(

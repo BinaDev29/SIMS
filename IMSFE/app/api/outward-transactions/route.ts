@@ -1,11 +1,15 @@
 import { NextResponse } from "next/server";
 import { AuthService } from "@/lib/auth";
 
-const BACKEND_URL = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/OutwardTransaction`;
+const getBackendUrl = () => process.env.NEXT_PUBLIC_BACKEND_URL || "";
 
 export async function GET() {
   try {
-    const response = await fetch(`${BACKEND_URL}/with-details`, {
+    const baseUrl = getBackendUrl();
+    if (!baseUrl) {
+      return NextResponse.json({ success: false, message: "Backend URL is not configured." }, { status: 500 });
+    }
+    const response = await fetch(`${baseUrl}/api/OutwardTransaction/with-details`, {
       headers: AuthService.getAuthHeaders(),
       cache: "no-store",
     });
@@ -33,7 +37,11 @@ export async function DELETE(request: Request) {
       return NextResponse.json({ success: false, message: "Transaction ID is required." }, { status: 400 });
     }
 
-    const response = await fetch(`${BACKEND_URL}/${id}`, {
+    const baseUrl = getBackendUrl();
+    if (!baseUrl) {
+      return NextResponse.json({ success: false, message: "Backend URL is not configured." }, { status: 500 });
+    }
+    const response = await fetch(`${baseUrl}/api/OutwardTransaction/${id}`, {
       method: "DELETE",
       headers: AuthService.getAuthHeaders(),
     });

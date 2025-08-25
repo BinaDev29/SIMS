@@ -290,3 +290,25 @@ export function EmployeesEditForm({ employeeId, onSuccess }: EmployeesEditFormPr
     </Card>
   )
 }
+
+// Lightweight placeholder form for creating a new employee.
+// This satisfies pages that import `EmployeesForm` while the full create flow is implemented.
+export function EmployeesForm() {
+  return (
+    <Card>
+      <CardHeader>
+        <div className="flex items-center space-x-2">
+          <UserCheck className="h-5 w-5 text-accent" />
+          <CardTitle className="font-[family-name:var(--font-space-grotesk)]">Add Employee</CardTitle>
+        </div>
+        <CardDescription>Coming soon: Create new employee records</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div className="space-y-2 text-sm text-muted-foreground">
+          <p>This section will allow adding new employees.</p>
+          <p>For now, you can manage existing records in the table.</p>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
